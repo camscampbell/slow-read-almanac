@@ -39,6 +39,8 @@ a { color: var(--accent); }
 .mast-stamp dt { color: var(--muted); }
 .mast-stamp dd { margin: 0; text-align: right; font-weight: 500; }
 .mast-actions { display: flex; flex-wrap: wrap; gap: 10px; width: 100%; }
+.theme-seg { margin-left: auto; }
+@media (max-width: 760px) { .theme-seg { margin-left: 0; } }
 
 /* Buttons */
 .btn { font: 600 14px var(--f-body); padding: 9px 16px; border-radius: var(--radius); border: 1px solid var(--accent); background: var(--accent); color: var(--accent-ink); cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }

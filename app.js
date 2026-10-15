@@ -68,7 +68,8 @@
         '<div class="mast-name"><p class="eyebrow">A shared calendar of Substack slow reads</p><h1>The Slow Read Almanac</h1>' +
         '<p>Long, patient reads of big books, one instalment at a time. Find a read to join, add it to your own calendar, or tell us about one you are hosting.</p></div>' +
         '<dl class="mast-stamp" id="stamp"></dl>' +
-        '<div class="mast-actions"><a class="btn" href="#submit" id="go-submit">Submit a slow read</a><button class="btn ghost" id="ics-all" type="button">Download all as .ics</button></div>' +
+        '<div class="mast-actions"><a class="btn" href="#submit" id="go-submit">Submit a slow read</a><button class="btn ghost" id="ics-all" type="button">Download all as .ics</button>' +
+        '<div class="seg theme-seg" role="group" aria-label="Colour theme"><button type="button" data-theme-pick="auto">Auto</button><button type="button" data-theme-pick="light">Light</button><button type="button" data-theme-pick="dark">Dark</button></div></div>' +
       '</header>' +
       '<section aria-labelledby="tl-h"><div class="section-head"><h2 id="tl-h">The year in reads</h2><div class="filters" id="filters"></div></div>' +
         '<div class="tl-scroll" id="timeline"></div><div class="legend" id="legend"></div></section>' +
@@ -235,6 +236,7 @@
   /* ---------- events ---------- */
   document.addEventListener("click", function (ev) {
     var t = ev.target.closest("button, a"); if (!t) return;
+    if (t.dataset.themePick) { setTheme(t.dataset.themePick); return; }
     if (t.dataset.status) { ui.status = t.dataset.status; saveUi(); renderFilters(); renderAll(); return; }
     if (t.dataset.jump) { var c = el("r-" + t.dataset.jump); if (c) { c.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "center" }); c.classList.add("flash"); setTimeout(function () { c.classList.remove("flash"); }, 1600); } return; }
     if (t.dataset.ics) { var r = reads.find(function (x) { return x.id === t.dataset.ics; }); if (r) saveIcs([r], slug(r.title) + ".ics"); return; }
@@ -244,13 +246,22 @@
     if (ev.target.id === "f-pubsel") { ui.pub = ev.target.value; saveUi(); renderAll(); } });
   document.addEventListener("input", function (ev) { if (ev.target.id === "f-search") { ui.q = ev.target.value; saveUi(); renderAll(); } });
 
+  /* ---------- theme ---------- */
+  function currentTheme() { try { return localStorage.getItem("almanac-theme") || "auto"; } catch (e) { return "auto"; } }
+  function setTheme(choice) {
+    if (choice === "light" || choice === "dark") document.documentElement.setAttribute("data-theme", choice);
+    else document.documentElement.removeAttribute("data-theme");
+    try { if (choice === "auto") localStorage.removeItem("almanac-theme"); else localStorage.setItem("almanac-theme", choice); } catch (e) {}
+    document.querySelectorAll("[data-theme-pick]").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.themePick === choice)); });
+  }
+
   /* ---------- boot ---------- */
   fetch("reads.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (data) {
     state = data || { reads: [] };
     reads = (state.reads || []).slice().sort(function (a, b) { return a.start < b.start ? -1 : a.start > b.start ? 1 : 0; });
     if (ui.lang !== "all" && langs().indexOf(ui.lang) < 0) ui.lang = "all";
   if (ui.pub !== "all" && !pubs().some(function (p) { return p.name === ui.pub; })) ui.pub = "all";
-    scaffold(); renderFilters(); renderAll(); renderSlip();
+    scaffold(); setTheme(currentTheme()); renderFilters(); renderAll(); renderSlip();
   }).catch(function () {
     el("app").innerHTML = '<p class="empty">The calendar could not be loaded. Refresh the page to try again.</p>';
   });
