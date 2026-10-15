@@ -19,23 +19,6 @@
       "notes": "Free for all subscribers: weekly recaps, a running character guide, Victorian context, and a dedicated chat space on Substack and Discord."
     },
     {
-      "id": "eugene-onegin-cams",
-      "title": "Eugene Onegin",
-      "author": "Alexander Pushkin",
-      "lang": "Russian",
-      "translation": "",
-      "series": "",
-      "host": "Cams Campbell",
-      "publication": "Cams Campbell Reads",
-      "url": "https://camscampbellreads.substack.com",
-      "start": "2026-09-01",
-      "end": "2026-10-31",
-      "freq": "other",
-      "cadence": "A two-month read through the novel in verse",
-      "notes": "",
-      "access": "free"
-    },
-    {
       "id": "anna-karenina-cams",
       "title": "Anna Karenina",
       "author": "Leo Tolstoy",
@@ -51,6 +34,23 @@
       "cadence": "Weekly instalments on Thursdays, following Henry Eliot's schedule",
       "notes": "A fourteen-month serialised slow read.",
       "access": "paid"
+    },
+    {
+      "id": "eugene-onegin-cams",
+      "title": "Eugene Onegin",
+      "author": "Alexander Pushkin",
+      "lang": "Russian",
+      "translation": "",
+      "series": "",
+      "host": "Cams Campbell",
+      "publication": "Cams Campbell Reads",
+      "url": "https://camscampbellreads.substack.com",
+      "start": "2026-09-21",
+      "end": "2026-11-12",
+      "freq": "weekly",
+      "cadence": "One chapter a week: posted on Mondays, to be read by Thursday",
+      "notes": "Eight weekly instalments, one for each chapter of the novel in verse.",
+      "access": "free"
     },
     {
       "id": "evelina-priory",
