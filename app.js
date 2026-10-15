@@ -5,7 +5,7 @@
 
   /* ---------- settings ---------- */
   // Link to an online submission form (Tally, Google Forms…). Leave empty to use the copy-and-send slip.
-  var SUBMIT_FORM_URL = "";
+  var SUBMIT_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdxfRhVBb9b0DbxxCIZ7ptXuUHJmlKEt3xxy9KrmCaUSUD65A/viewform";
   var HOME = "https://camscampbellreads.substack.com";
 
   var MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
@@ -165,7 +165,7 @@
       "<p>Tell us about a slow read running on Substack. Every submission is checked by hand before it appears on the calendar.</p>" +
       "<p>Give the exact start and end dates of your schedule, and a link to your announcement post if you have one.</p></div>";
     if (SUBMIT_FORM_URL) {
-      el("submit").innerHTML = intro + '<div><p>Submissions go through a short online form.</p><p><a class="btn" href="' + esc(SUBMIT_FORM_URL) + '" target="_blank" rel="noopener">Open the submission form</a></p></div>';
+      el("submit").innerHTML = intro + '<div><p>Submissions go through a short Google Form. It takes about two minutes, and your contact details are only seen by Cams.</p><p><a class="btn" href="' + esc(SUBMIT_FORM_URL) + '" target="_blank" rel="noopener">Open the submission form</a></p></div>';
       return;
     }
     el("submit").innerHTML = intro +
