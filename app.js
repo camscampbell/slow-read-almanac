@@ -77,7 +77,7 @@
         '<div class="tl-scroll" id="timeline"></div><div class="legend" id="legend"></div></section>' +
       '<section aria-labelledby="list-h"><div class="section-head"><h2 id="list-h">All reads</h2><p class="eyebrow" id="count"></p></div><div id="list"></div></section>' +
       '<section id="submit" class="slip" aria-labelledby="slip-h"></section>' +
-      '<footer>Calendar last updated <span class="mono">' + esc(state.updated ? fmt(parseD(state.updated)) : "") + '</span>. Kept by Cams Campbell of <a href="' + HOME + '" target="_blank" rel="noopener">Cam\'s Campbell Reads</a>.</footer>';
+      '<footer>Calendar last updated <span class="mono">' + esc(state.updated ? fmt(parseD(state.updated)) : "") + '</span>. Kept by Cams Campbell of <a href="' + HOME + '" target="_blank" rel="noopener">Cams Campbell Reads</a>.</footer>';
   }
 
   /* ---------- render ---------- */
@@ -207,7 +207,7 @@
       "How often: " + (FREQ[v.freq] || v.freq), "Schedule: " + (v.cadence || "-"), "Notes: " + (v.notes || "-"), "Contact: " + (v.contact || "-")].join("\n");
     var box = el("copybox"); box.hidden = false;
     box.innerHTML = '<p><strong>Your submission is ready.</strong> Copy the details below and send them to Cams as a comment or message on ' +
-      '<a href="' + HOME + '" target="_blank" rel="noopener">Cam\'s Campbell Reads</a>.</p><pre id="copytext">' + esc(text) + "</pre>" +
+      '<a href="' + HOME + '" target="_blank" rel="noopener">Cams Campbell Reads</a>.</p><pre id="copytext">' + esc(text) + "</pre>" +
       '<div><button type="button" class="btn-sm" id="copy-btn">Copy details</button> <span class="msg" id="copy-msg" role="status"></span></div>';
     el("copy-btn").addEventListener("click", function () {
       function selectCopy() { var r = document.createRange(); r.selectNodeContents(el("copytext")); var s = getSelection(); s.removeAllRanges(); s.addRange(r); el("copy-msg").textContent = "Selected. Press Ctrl+C or Cmd+C to copy."; }

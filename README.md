@@ -1,6 +1,6 @@
 # The Slow Read Almanac
 
-A shared calendar of slow reads running on Substack, kept by Cams Campbell of [Cam's Campbell Reads](https://camscampbellreads.substack.com).
+A shared calendar of slow reads running on Substack, kept by Cams Campbell of [Cams Campbell Reads](https://camscampbellreads.substack.com).
 
 The site is plain HTML, CSS and JavaScript, served by GitHub Pages. There is no build step.
 
