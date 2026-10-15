@@ -15,7 +15,7 @@
   var state = { reads: [] };
   var reads = [];
   var today = new Date(); today = new Date(today.getFullYear(), today.getMonth(), today.getDate());
-  var ui = { status: "all", lang: "all", q: "" };
+  var ui = { status: "all", lang: "all", pub: "all", q: "" };
   try { var saved = JSON.parse(localStorage.getItem("almanac-filters") || "null"); if (saved) ui = Object.assign(ui, saved); } catch (e) {}
 
   /* ---------- helpers ---------- */
@@ -29,6 +29,7 @@
   function safeUrl(u) { return /^https?:\/\//i.test(u || "") ? u : ""; }
   function slug(s) { return String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40) || "read"; }
   function langs() { var seen = []; reads.forEach(function (r) { var l = (r.lang || "Other").trim(); if (seen.indexOf(l) < 0) seen.push(l); }); return seen; }
+  function pubs() { var seen = {}; reads.forEach(function (r) { var k = (r.publication || r.host || "").trim(); if (!k) return; if (!seen[k]) seen[k] = { name: k, host: (r.host || "").trim(), n: 0 }; seen[k].n++; }); return Object.keys(seen).sort(function (a, b) { return a.localeCompare(b); }).map(function (k) { return seen[k]; }); }
   function langColor(l) { var list = langs(); var i = list.indexOf((l || "Other").trim()); return "var(--lang-" + ((i < 0 ? 0 : i) % 6 + 1) + ")"; }
   function status(r) {
     var s = parseD(r.start), e = parseD(r.end);
@@ -45,6 +46,7 @@
       if (ui.status === "upcoming" && st !== "soon" && st !== "upcoming") return false;
       if (ui.status === "finished" && st !== "finished") return false;
       if (ui.lang !== "all" && (r.lang || "Other").trim() !== ui.lang) return false;
+      if (ui.pub !== "all" && (r.publication || r.host || "").trim() !== ui.pub) return false;
       if (q && [r.title, r.author, r.host, r.publication, r.translation, r.series].join(" ").toLowerCase().indexOf(q) < 0) return false;
       return true;
     });
@@ -91,6 +93,7 @@
     el("filters").innerHTML =
       '<div class="seg" role="group" aria-label="Status">' + segs.map(function (s) { return '<button type="button" data-status="' + s[0] + '" aria-pressed="' + (ui.status === s[0]) + '">' + s[1] + "</button>"; }).join("") + "</div>" +
       '<label class="field-inline" for="f-langsel">Original language <select id="f-langsel">' + opts.join("") + "</select></label>" +
+      '<label class="field-inline" for="f-pubsel">Substack <select id="f-pubsel"><option value="all">All Substacks</option>' + pubs().map(function (p) { return '<option value="' + esc(p.name) + '"' + (ui.pub === p.name ? " selected" : "") + ">" + esc(p.name + (p.host && p.host !== p.name ? " (" + p.host + ")" : "")) + " · " + p.n + "</option>"; }).join("") + "</select></label>" +
       '<input type="search" id="f-search" placeholder="Search title, author, host" aria-label="Search reads" value="' + esc(ui.q) + '">';
   }
   function renderTimeline(list) {
@@ -237,7 +240,8 @@
     if (t.dataset.ics) { var r = reads.find(function (x) { return x.id === t.dataset.ics; }); if (r) saveIcs([r], slug(r.title) + ".ics"); return; }
     if (t.id === "ics-all") { saveIcs(filtered(), "slow-reads.ics"); return; }
   });
-  document.addEventListener("change", function (ev) { if (ev.target.id === "f-langsel") { ui.lang = ev.target.value; saveUi(); renderAll(); } });
+  document.addEventListener("change", function (ev) { if (ev.target.id === "f-langsel") { ui.lang = ev.target.value; saveUi(); renderAll(); }
+    if (ev.target.id === "f-pubsel") { ui.pub = ev.target.value; saveUi(); renderAll(); } });
   document.addEventListener("input", function (ev) { if (ev.target.id === "f-search") { ui.q = ev.target.value; saveUi(); renderAll(); } });
 
   /* ---------- boot ---------- */
@@ -245,6 +249,7 @@
     state = data || { reads: [] };
     reads = (state.reads || []).slice().sort(function (a, b) { return a.start < b.start ? -1 : a.start > b.start ? 1 : 0; });
     if (ui.lang !== "all" && langs().indexOf(ui.lang) < 0) ui.lang = "all";
+  if (ui.pub !== "all" && !pubs().some(function (p) { return p.name === ui.pub; })) ui.pub = "all";
     scaffold(); renderFilters(); renderAll(); renderSlip();
   }).catch(function () {
     el("app").innerHTML = '<p class="empty">The calendar could not be loaded. Refresh the page to try again.</p>';
