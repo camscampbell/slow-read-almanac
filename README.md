@@ -38,6 +38,7 @@ Edit `reads.json`. Each read looks like this:
 - Dates are `YYYY-MM-DD`.
 - `freq` is one of `weekly`, `fortnightly`, `daily`, `monthly` or `other`.
 - `series` groups related books, for example `Wolf Crawl`.
+- `access` is `free`, `mixed` (free with paid extras) or `paid`. Leave it out if unknown, and no label is shown.
 - Update `updated` at the top of the file to today's date.
 
 ## Submissions

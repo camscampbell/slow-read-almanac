@@ -10,12 +10,13 @@
 
   var MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   var FREQ = { weekly: "Weekly", fortnightly: "Fortnightly", daily: "Daily", monthly: "Monthly", other: "Other" };
+  var ACCESS_LABEL = { free: "Free", mixed: "Free with paid extras", paid: "Paid only" };
   var STATUS_LABEL = { progress: "In progress", soon: "Starting soon", upcoming: "Upcoming", finished: "Finished" };
 
   var state = { reads: [] };
   var reads = [];
   var today = new Date(); today = new Date(today.getFullYear(), today.getMonth(), today.getDate());
-  var ui = { status: "all", lang: "all", pub: "all", q: "" };
+  var ui = { status: "all", lang: "all", pub: "all", access: "all", q: "" };
   try { var saved = JSON.parse(localStorage.getItem("almanac-filters") || "null"); if (saved) ui = Object.assign(ui, saved); } catch (e) {}
 
   /* ---------- helpers ---------- */
@@ -46,6 +47,7 @@
       if (ui.status === "upcoming" && st !== "soon" && st !== "upcoming") return false;
       if (ui.status === "finished" && st !== "finished") return false;
       if (ui.lang !== "all" && (r.lang || "Other").trim() !== ui.lang) return false;
+      if (ui.access !== "all" && r.access !== ui.access) return false;
       if (ui.pub !== "all" && (r.publication || r.host || "").trim() !== ui.pub) return false;
       if (q && [r.title, r.author, r.host, r.publication, r.translation, r.series].join(" ").toLowerCase().indexOf(q) < 0) return false;
       return true;
@@ -95,6 +97,7 @@
       '<div class="seg" role="group" aria-label="Status">' + segs.map(function (s) { return '<button type="button" data-status="' + s[0] + '" aria-pressed="' + (ui.status === s[0]) + '">' + s[1] + "</button>"; }).join("") + "</div>" +
       '<label class="field-inline" for="f-langsel">Original language <select id="f-langsel">' + opts.join("") + "</select></label>" +
       '<label class="field-inline" for="f-pubsel">Substack <select id="f-pubsel"><option value="all">All Substacks</option>' + pubs().map(function (p) { return '<option value="' + esc(p.name) + '"' + (ui.pub === p.name ? " selected" : "") + ">" + esc(p.name + (p.host && p.host !== p.name ? " (" + p.host + ")" : "")) + " · " + p.n + "</option>"; }).join("") + "</select></label>" +
+      '<label class="field-inline" for="f-accesssel">Access <select id="f-accesssel"><option value="all">Any</option>' + ["free", "mixed", "paid"].map(function (k) { return '<option value="' + k + '"' + (ui.access === k ? " selected" : "") + ">" + ACCESS_LABEL[k] + "</option>"; }).join("") + "</select></label>" +
       '<input type="search" id="f-search" placeholder="Search title, author, host" aria-label="Search reads" value="' + esc(ui.q) + '">';
   }
   function renderTimeline(list) {
@@ -135,7 +138,7 @@
     var gcal = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=" + encodeURIComponent("Slow read: " + r.title + (r.publication ? " (" + r.publication + ")" : "")) +
       "&dates=" + compact(s) + "/" + compact(addDays(e, 1)) + "&details=" + encodeURIComponent([r.cadence, url].filter(Boolean).join("\n"));
     return '<article class="card" id="r-' + esc(r.id) + '" style="--c:' + langColor(r.lang) + '">' +
-      '<div class="card-top"><span class="pill ' + st + '">' + STATUS_LABEL[st] + '</span><span class="dot" style="--c:' + langColor(r.lang) + '">' + esc(r.lang || "Other") + "</span></div>" +
+      '<div class="card-top"><span class="chips"><span class="pill ' + st + '">' + STATUS_LABEL[st] + "</span>" + (ACCESS_LABEL[r.access] ? '<span class="access ' + r.access + '">' + ACCESS_LABEL[r.access] + "</span>" : "") + '</span><span class="dot" style="--c:' + langColor(r.lang) + '">' + esc(r.lang || "Other") + "</span></div>" +
       (r.series ? '<p class="eyebrow">' + esc(r.series) + "</p>" : "") + "<h3>" + esc(r.title) + "</h3>" +
       '<p class="byline">' + esc(r.author) + (r.translation ? " · translated by " + esc(r.translation) : "") + "</p>" +
       "<p>" + (url ? '<a href="' + esc(url) + '" target="_blank" rel="noopener">' + esc(r.publication || url) + "</a>" : esc(r.publication)) + (r.host ? " · hosted by " + esc(r.host) : "") + "</p>" +
@@ -243,6 +246,7 @@
     if (t.id === "ics-all") { saveIcs(filtered(), "slow-reads.ics"); return; }
   });
   document.addEventListener("change", function (ev) { if (ev.target.id === "f-langsel") { ui.lang = ev.target.value; saveUi(); renderAll(); }
+    if (ev.target.id === "f-accesssel") { ui.access = ev.target.value; saveUi(); renderAll(); }
     if (ev.target.id === "f-pubsel") { ui.pub = ev.target.value; saveUi(); renderAll(); } });
   document.addEventListener("input", function (ev) { if (ev.target.id === "f-search") { ui.q = ev.target.value; saveUi(); renderAll(); } });
 

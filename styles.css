@@ -99,6 +99,11 @@ input[type="search"] { min-width: 0; width: 220px; max-width: 100%; }
 .pill.progress { background: var(--ok-soft); color: var(--ok); }
 .pill.soon, .pill.upcoming { background: var(--warn-soft); color: var(--warn); }
 .pill.finished { background: var(--done-soft); color: var(--done); }
+.chips { display: inline-flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.access { font-family: var(--f-data); font-size: 11px; letter-spacing: 0.04em; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--rule); color: var(--muted); }
+.access.free { border-color: var(--ok); color: var(--ok); }
+.access.mixed { border-color: var(--accent); color: var(--accent); }
+.access.paid { border-color: var(--ink); color: var(--ink); }
 .card h3 { font-size: 24px; line-height: 1.15; }
 .card .eyebrow { margin-bottom: -6px; }
 .card p { margin: 0; overflow-wrap: anywhere; }
