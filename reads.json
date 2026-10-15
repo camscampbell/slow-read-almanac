@@ -162,7 +162,8 @@
       "end": "2027-12-26",
       "freq": "weekly",
       "cadence": "About 30 pages a week",
-      "notes": "A year-long read. Paid subscribers get weekly recaps, a running character guide, notes on the original French, and access to the subscriber chat and Discord. Ines recommends the unabridged Robin Buss translation (Penguin Classics)."
+      "notes": "A year-long read. Paid subscribers get weekly recaps, a running character guide, notes on the original French, and access to the subscriber chat and Discord. Ines recommends the unabridged Robin Buss translation (Penguin Classics).",
+      "access": "paid"
     },
     {
       "id": "wolf-hall-fat",
