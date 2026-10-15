@@ -32,7 +32,8 @@
       "end": "2026-10-31",
       "freq": "other",
       "cadence": "A two-month read through the novel in verse",
-      "notes": ""
+      "notes": "",
+      "access": "free"
     },
     {
       "id": "anna-karenina-cams",
@@ -48,7 +49,8 @@
       "end": "2027-10-28",
       "freq": "weekly",
       "cadence": "Weekly instalments on Thursdays, following Henry Eliot's schedule",
-      "notes": "A fourteen-month serialised slow read."
+      "notes": "A fourteen-month serialised slow read.",
+      "access": "paid"
     },
     {
       "id": "evelina-priory",
