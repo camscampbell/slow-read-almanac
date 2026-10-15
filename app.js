@@ -137,7 +137,7 @@
     var p = st === "progress" ? progressOf(r) : null;
     var gcal = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=" + encodeURIComponent("Slow read: " + r.title + (r.publication ? " (" + r.publication + ")" : "")) +
       "&dates=" + compact(s) + "/" + compact(addDays(e, 1)) + "&details=" + encodeURIComponent([r.cadence, url].filter(Boolean).join("\n"));
-    return '<article class="card" id="r-' + esc(r.id) + '" style="--c:' + langColor(r.lang) + '">' +
+    return '<article class="card' + (st === "progress" ? " live" : "") + '" id="r-' + esc(r.id) + '" style="--c:' + langColor(r.lang) + '">' +
       '<div class="card-top"><span class="chips"><span class="pill ' + st + '">' + STATUS_LABEL[st] + "</span>" + (ACCESS_LABEL[r.access] ? '<span class="access ' + r.access + '">' + ACCESS_LABEL[r.access] + "</span>" : "") + '</span><span class="dot" style="--c:' + langColor(r.lang) + '">' + esc(r.lang || "Other") + "</span></div>" +
       (r.series ? '<p class="eyebrow">' + esc(r.series) + "</p>" : "") + "<h3>" + esc(r.title) + "</h3>" +
       '<p class="byline">' + esc(r.author) + (r.translation ? " · translated by " + esc(r.translation) : "") + "</p>" +
