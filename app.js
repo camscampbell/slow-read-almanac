@@ -125,8 +125,9 @@
       return '<div class="tl-row"><div class="tl-label"><span class="t">' + esc(r.title) + '</span><span class="h">' + esc(r.series ? r.series + " · " + (r.publication || r.host) : (r.publication || r.host)) + "</span></div>" +
         '<div class="tl-track"><button type="button" class="tl-bar ' + st + '" data-jump="' + esc(r.id) + '" style="left:' + left.toFixed(3) + "%;width:" + Math.max(0.4, right - left).toFixed(3) + "%;--c:" + langColor(r.lang) + '" aria-label="' + esc(r.title + ", " + fmt(s) + " to " + fmt(parseD(r.end))) + '" title="' + esc(r.title + " · " + fmt(s) + " – " + fmt(parseD(r.end))) + '"></button></div></div>';
     }).join("");
-    box.innerHTML = '<div class="tl" style="--months:' + n + '"><div class="tl-row tl-head"><div class="tl-label"><span class="h">Read</span></div><div class="tl-months">' + head + "</div></div>" + rows +
-      (today >= from && today < to ? '<div class="tl-today" style="--p:' + pos(today).toFixed(4) + '"><span>Today</span></div>' : "") + "</div>";
+    box.innerHTML = '<div class="tl" style="--months:' + n + '"><div class="tl-row tl-head"><div class="tl-label"><span class="h">Read</span></div><div class="tl-months">' + head +
+      (today >= from && today < to ? '<i class="tl-now" style="left:' + (pos(today) * 100).toFixed(3) + '%"><span>Today</span></i>' : "") + "</div></div>" + rows +
+      (today >= from && today < to ? '<div class="tl-today" style="--p:' + pos(today).toFixed(4) + '"></div>' : "") + "</div>";
     var used = []; list.forEach(function (r) { var l = (r.lang || "Other").trim(); if (used.indexOf(l) < 0) used.push(l); });
     el("legend").innerHTML = used.map(function (l) { return '<span class="dot" style="--c:' + langColor(l) + '">' + esc(l) + "</span>"; }).join("") + "<span>Faded bars have finished.</span>";
     var tp = pos(today);
