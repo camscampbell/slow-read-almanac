@@ -170,6 +170,23 @@
       "notes": ""
     },
     {
+      "id": "swanns-way-ct",
+      "title": "Swann's Way",
+      "author": "Marcel Proust",
+      "lang": "French",
+      "translation": "",
+      "series": "",
+      "host": "Rebecca",
+      "publication": "Common Threads",
+      "url": "https://rebeccaisabel.substack.com/p/read-proust-with-us",
+      "start": "2026-11-14",
+      "end": "2027-01-12",
+      "freq": "weekly",
+      "cadence": "A new post every Saturday",
+      "access": "free",
+      "notes": "Each week brings a companion sheet with visuals and fillable printables to help with the text: a little like homework, but fun."
+    },
+    {
       "id": "war-and-peace-daily-fat",
       "title": "War and Peace",
       "author": "Leo Tolstoy",
@@ -266,6 +283,23 @@
       "end": "2027-05-04",
       "freq": "weekly",
       "cadence": "17 weeks",
+      "notes": ""
+    },
+    {
+      "id": "makioka-sisters-wsl",
+      "title": "The Makioka Sisters",
+      "author": "Jun'ichirō Tanizaki",
+      "lang": "Japanese",
+      "translation": "Edward Seidensticker",
+      "series": "A Year with the Makioka Sisters",
+      "host": "Wabi Sabi Life",
+      "publication": "Wabi Sabi Life",
+      "url": "https://thiswabisabilife.substack.com/",
+      "start": "2027-01-10",
+      "end": "2027-12-12",
+      "freq": "monthly",
+      "cadence": "About 50 pages a month",
+      "access": "mixed",
       "notes": ""
     },
     {
