@@ -104,6 +104,22 @@
       "notes": "A reading guide is at thereaderandthewriter.substack.com/p/harry-potter-slow-read."
     },
     {
+      "id": "japanese-ghost-stories-rtc",
+      "title": "Japanese Ghost Stories",
+      "author": "Lafcadio Hearn",
+      "lang": "English",
+      "translation": "",
+      "series": "",
+      "host": "Henry Eliot",
+      "publication": "Read the Classics",
+      "url": "https://henryeliot.substack.com",
+      "start": "2026-10-02",
+      "end": "2026-10-23",
+      "freq": "weekly",
+      "cadence": "Three weeks, with a batch of stories discussed each Friday",
+      "notes": "All 34 stories in the Penguin Classics edition, plus the appendix 'Nightmare-Touch'. In-person discussion at the Hatchards Classics Book Club, London, on Thursday 29 October."
+    },
+    {
       "id": "lila-raw",
       "title": "Lila",
       "author": "Marilynne Robinson",
