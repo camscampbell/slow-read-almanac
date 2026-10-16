@@ -1,6 +1,23 @@
 {
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "reads": [
+    {
+      "id": "proust-gallery-swann-tre",
+      "title": "Swann's Way",
+      "author": "Marcel Proust",
+      "lang": "French",
+      "translation": "C. K. Scott Moncrieff",
+      "series": "Proust's Gallery",
+      "host": "Kristine Benoit de Bykhovetz",
+      "publication": "The Reflective Eye",
+      "url": "https://thereflectiveeye.substack.com/p/the-proust-curriculum",
+      "start": "2026-02-01",
+      "end": "2026-12-31",
+      "freq": "monthly",
+      "cadence": "One artist and one artwork each month, looked at slowly alongside the novel",
+      "access": "mixed",
+      "notes": "An art companion to Volume One, already under way: join at any post. Reading Proust alongside, in any translation, is recommended but not required."
+    },
     {
       "id": "david-copperfield-trs",
       "title": "David Copperfield",
@@ -51,6 +68,57 @@
       "cadence": "One chapter a week: posted on Mondays, to be read by Thursday",
       "notes": "Eight weekly instalments, one for each chapter of the novel in verse.",
       "access": "free"
+    },
+    {
+      "id": "white-witch-egbc",
+      "title": "The White Witch",
+      "author": "Elizabeth Goudge",
+      "lang": "English",
+      "translation": "",
+      "series": "",
+      "host": "Julie",
+      "publication": "Elizabeth Goudge Book Club",
+      "url": "https://elizabethgoudgebookclub.substack.com/p/getting-ready-for-october-8ed",
+      "start": "2026-10-01",
+      "end": "2026-10-29",
+      "freq": "weekly",
+      "cadence": "One month for the book, with a live Zoom discussion at the end",
+      "access": "mixed",
+      "notes": "A dramatic story of love and loss set during the English Civil War."
+    },
+    {
+      "id": "harry-potter-raw",
+      "title": "The Harry Potter series",
+      "author": "J. K. Rowling",
+      "lang": "English",
+      "translation": "",
+      "series": "R&W Behind-the-scenes Read",
+      "host": "Shari Dragovich & Rhea Forney",
+      "publication": "The Reader & the Writer",
+      "url": "https://thereaderandthewriter.substack.com/p/welcome-to-harry-potter",
+      "start": "2026-10-02",
+      "end": "2027-05-21",
+      "freq": "monthly",
+      "cadence": "Four to six weeks per book, following the school year",
+      "access": "mixed",
+      "notes": "A reading guide is at thereaderandthewriter.substack.com/p/harry-potter-slow-read."
+    },
+    {
+      "id": "lila-raw",
+      "title": "Lila",
+      "author": "Marilynne Robinson",
+      "lang": "English",
+      "translation": "",
+      "series": "",
+      "host": "Shari Dragovich & Rhea Forney",
+      "publication": "The Reader & the Writer",
+      "url": "https://thereaderandthewriter.substack.com/p/r-and-ws-2026-reading-list-in-order",
+      "start": "2026-10-20",
+      "end": "2026-11-03",
+      "freq": "weekly",
+      "cadence": "About 70 pages a week, with a podcast episode every Tuesday",
+      "access": "mixed",
+      "notes": ""
     },
     {
       "id": "evelina-priory",
@@ -133,6 +201,23 @@
       "cadence": "Weekly Thursday discussions for paid subscribers; a monthly discussion open to everyone",
       "notes": "Page numbers follow the three-volume Penguin Classics edition. Any translation is welcome.",
       "access": "mixed"
+    },
+    {
+      "id": "proust-gallery-grove-tre",
+      "title": "Within a Budding Grove",
+      "author": "Marcel Proust",
+      "lang": "French",
+      "translation": "C. K. Scott Moncrieff",
+      "series": "Proust's Gallery",
+      "host": "Kristine Benoit de Bykhovetz",
+      "publication": "The Reflective Eye",
+      "url": "https://thereflectiveeye.substack.com/p/the-proust-curriculum",
+      "start": "2027-01-01",
+      "end": "2027-12-31",
+      "freq": "monthly",
+      "cadence": "One artist and one artwork each month, looked at slowly alongside the novel",
+      "access": "mixed",
+      "notes": "An art companion to Volume Two. Read at your own pace in any translation; no art history background needed."
     },
     {
       "id": "eye-in-the-door-fat",
@@ -316,6 +401,23 @@
       "access": "mixed"
     },
     {
+      "id": "van-gogh-letters-tre",
+      "title": "The Letters of Vincent van Gogh",
+      "author": "Vincent van Gogh",
+      "lang": "Dutch and French",
+      "translation": "Arnold Pomerans",
+      "series": "Slow Looking",
+      "host": "Kristine Benoit de Bykhovetz",
+      "publication": "The Reflective Eye",
+      "url": "https://thereflectiveeye.substack.com/",
+      "start": "2027-07-01",
+      "end": "2027-07-31",
+      "freq": "weekly",
+      "cadence": "A selection of letters each week",
+      "access": "mixed",
+      "notes": "Part of a slow-looking series on one artist a month: July 2027 is Van Gogh. Penguin Classics edition."
+    },
+    {
       "id": "mirror-and-the-light-fat",
       "title": "The Mirror and the Light",
       "author": "Hilary Mantel",
@@ -397,6 +499,23 @@
       "cadence": "Weekly Thursday discussions for paid subscribers; a monthly discussion open to everyone",
       "notes": "",
       "access": "mixed"
+    },
+    {
+      "id": "miss-macintosh-ri",
+      "title": "Miss MacIntosh, My Darling",
+      "author": "Marguerite Young",
+      "lang": "English",
+      "translation": "",
+      "series": "MMMD2028",
+      "host": "Coral Russell",
+      "publication": "Radical Immanence",
+      "url": "https://coralrussell.substack.com/p/7bc3f974-53a1-497a-9e88-de29b306cae0",
+      "start": "2028-01-01",
+      "end": "2029-07-31",
+      "freq": "weekly",
+      "cadence": "A chapter a week for 82 weeks",
+      "access": "free",
+      "notes": "Comes with a free interactive companion website."
     }
   ]
 }
