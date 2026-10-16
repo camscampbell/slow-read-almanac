@@ -70,6 +70,23 @@
       "access": "free"
     },
     {
+      "id": "piranesi-as",
+      "title": "Piranesi",
+      "author": "Susanna Clarke",
+      "lang": "English",
+      "translation": "",
+      "series": "The Chapter House",
+      "host": "Christina Bieber Lake",
+      "publication": "Art & Soul",
+      "url": "https://christinabieberlake.substack.com/p/come-read-piranesi-with-me",
+      "start": "2026-09-25",
+      "end": "2026-11-11",
+      "freq": "other",
+      "cadence": "Read on your own, then join one concluding discussion",
+      "access": "mixed",
+      "notes": ""
+    },
+    {
       "id": "white-witch-egbc",
       "title": "The White Witch",
       "author": "Elizabeth Goudge",
