@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16",
+  "updated": "2026-10-17",
   "reads": [
     {
       "id": "proust-gallery-swann-tre",
@@ -204,6 +204,23 @@
       "cadence": "7 weeks",
       "notes": "The first post is free to everyone; after that it needs a paid subscription (£5 a month or £50 a year, with 20% off group annual subscriptions). Includes a podcast version of each post.",
       "access": "paid"
+    },
+    {
+      "id": "bede-mm",
+      "title": "Ecclesiastical History of the English People",
+      "author": "Bede",
+      "lang": "Latin",
+      "translation": "Judith McClure and Roger Collins (other translations welcome)",
+      "series": "",
+      "host": "Holly Brown",
+      "publication": "Medieval Musings",
+      "url": "https://medievalmusings.substack.com/p/an-invitation-to-read-bede-together",
+      "start": "2026-11-02",
+      "end": "2027-04-30",
+      "freq": "monthly",
+      "cadence": "A month of preparation, then one section each month",
+      "access": "paid",
+      "notes": "Everyone is welcome, whether a complete medieval newbie or a seasoned pro."
     },
     {
       "id": "swanns-way-ct",
