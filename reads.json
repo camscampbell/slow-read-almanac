@@ -138,6 +138,23 @@
       "access": "paid"
     },
     {
+      "id": "the-leopard-trs",
+      "title": "The Leopard",
+      "author": "Giuseppe Tomasi di Lampedusa",
+      "lang": "Italian",
+      "translation": "Archibald Colquhoun",
+      "series": "",
+      "host": "Ines Scauda",
+      "publication": "The Reading Snail",
+      "url": "https://thereadingsnail.substack.com/p/announcing-our-next-snail-members",
+      "start": "2026-10-05",
+      "end": "2026-12-27",
+      "freq": "fortnightly",
+      "cadence": "About 30 pages every two weeks",
+      "access": "paid",
+      "notes": "Paid subscribers get fortnightly recaps, a running character guide, notes on the original Italian and historical background, plus the subscriber chat and Discord."
+    },
+    {
       "id": "lila-raw",
       "title": "Lila",
       "author": "Marilynne Robinson",
