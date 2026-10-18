@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17",
+  "updated": "2026-10-18",
   "reads": [
     {
       "id": "proust-gallery-swann-tre",
@@ -255,6 +255,23 @@
       "cadence": "A new post every Saturday",
       "access": "free",
       "notes": "Each week brings a companion sheet with visuals and fillable printables to help with the text: a little like homework, but fun."
+    },
+    {
+      "id": "i-capture-the-castle-clds",
+      "title": "I Capture the Castle",
+      "author": "Dodie Smith",
+      "lang": "English",
+      "translation": "",
+      "series": "20th Century Book Club",
+      "host": "Ann Kennedy Smith",
+      "publication": "Cambridge Ladies' Dining Society",
+      "url": "https://akennedysmith.substack.com/p/20th-century-book-club-schedule-2026",
+      "start": "2026-11-28",
+      "end": "2027-01-16",
+      "freq": "fortnightly",
+      "cadence": "A post on the writer's life, then two or three posts on the book itself",
+      "access": "paid",
+      "notes": "Post dates may occasionally change."
     },
     {
       "id": "war-and-peace-daily-fat",
