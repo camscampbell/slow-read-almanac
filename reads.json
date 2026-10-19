@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18",
+  "updated": "2026-10-19",
   "reads": [
     {
       "id": "proust-gallery-swann-tre",
@@ -51,6 +51,23 @@
       "cadence": "Weekly instalments on Thursdays, following Henry Eliot's schedule",
       "notes": "A fourteen-month serialised slow read.",
       "access": "paid"
+    },
+    {
+      "id": "taiwan-travelogue-dbb",
+      "title": "Taiwan Travelogue",
+      "author": "Yang Shuang-zi",
+      "lang": "Chinese",
+      "translation": "Lin King",
+      "series": "",
+      "host": "Ally",
+      "publication": "读本本 / Dú Běnběn",
+      "url": "https://dubenben.substack.com/",
+      "start": "2026-09-15",
+      "end": "2027-01-27",
+      "freq": "weekly",
+      "cadence": "One chapter a week, with occasional catch-up breaks",
+      "access": "free",
+      "notes": "Bilingual: read the Chinese original, the English translation, or both. Posts are written in English."
     },
     {
       "id": "eugene-onegin-cams",
@@ -408,6 +425,23 @@
       "cadence": "About 30 pages a week, with check-ins every fortnight",
       "access": "mixed",
       "notes": "A six-month read. The first month is free; paid subscribers get fortnightly check-ins, catch-up notes, the members' chat and live Reading Rooms. A heavy book, with real cruelty and loss alongside tenderness and humour."
+    },
+    {
+      "id": "gate-of-angels-clds",
+      "title": "The Gate of Angels",
+      "author": "Penelope Fitzgerald",
+      "lang": "English",
+      "translation": "",
+      "series": "20th Century Book Club",
+      "host": "Ann Kennedy Smith",
+      "publication": "Cambridge Ladies' Dining Society",
+      "url": "https://akennedysmith.substack.com/p/20th-century-book-club-schedule-2026",
+      "start": "2027-02-13",
+      "end": "2027-03-13",
+      "freq": "fortnightly",
+      "cadence": "A post on the writer's life, then two or three posts on the book itself",
+      "access": "paid",
+      "notes": "Post dates may occasionally change."
     },
     {
       "id": "ghost-road-fat",
