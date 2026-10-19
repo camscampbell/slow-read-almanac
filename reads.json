@@ -172,6 +172,23 @@
       "notes": "Paid subscribers get fortnightly recaps, a running character guide, notes on the original Italian and historical background, plus the subscriber chat and Discord."
     },
     {
+      "id": "cheerful-weather-clds",
+      "title": "Cheerful Weather for the Wedding",
+      "author": "Julia Strachey",
+      "lang": "English",
+      "translation": "",
+      "series": "20th Century Book Club",
+      "host": "Ann Kennedy Smith",
+      "publication": "Cambridge Ladies' Dining Society",
+      "url": "https://akennedysmith.substack.com/i/210336919/julia-stracheys-cheerful-weather-for-the-wedding-1932",
+      "start": "2026-10-18",
+      "end": "2026-10-31",
+      "freq": "weekly",
+      "cadence": "",
+      "access": "mixed",
+      "notes": ""
+    },
+    {
       "id": "lila-raw",
       "title": "Lila",
       "author": "Marilynne Robinson",
@@ -435,11 +452,11 @@
       "series": "20th Century Book Club",
       "host": "Ann Kennedy Smith",
       "publication": "Cambridge Ladies' Dining Society",
-      "url": "https://akennedysmith.substack.com/p/20th-century-book-club-schedule-2026",
+      "url": "https://akennedysmith.substack.com/i/210336919/penelope-fitzgeralds-the-gate-of-angels-1990",
       "start": "2027-02-13",
       "end": "2027-03-13",
       "freq": "fortnightly",
-      "cadence": "A post on the writer's life, then two or three posts on the book itself",
+      "cadence": "A biographical introduction, then two more posts",
       "access": "paid",
       "notes": "Post dates may occasionally change."
     },
