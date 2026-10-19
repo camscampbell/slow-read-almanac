@@ -308,6 +308,23 @@
       "notes": "Post dates may occasionally change."
     },
     {
+      "id": "nutcracker-rtc",
+      "title": "Nutcracker and Mouse King & The Tale of the Nutcracker",
+      "author": "E. T. A. Hoffmann & Alexandre Dumas",
+      "lang": "German and French",
+      "translation": "Joachim Neugroschel",
+      "series": "",
+      "host": "Henry Eliot",
+      "publication": "Read the Classics",
+      "url": "https://henryeliot.substack.com/p/schedule-and-archive",
+      "start": "2026-12-04",
+      "end": "2026-12-18",
+      "freq": "weekly",
+      "cadence": "One version of the story each week",
+      "access": "paid",
+      "notes": ""
+    },
+    {
       "id": "war-and-peace-daily-fat",
       "title": "War and Peace",
       "author": "Leo Tolstoy",
@@ -357,6 +374,23 @@
       "cadence": "One artist and one artwork each month, looked at slowly alongside the novel",
       "access": "mixed",
       "notes": "An art companion to Volume Two. Read at your own pace in any translation; no art history background needed."
+    },
+    {
+      "id": "death-comes-archbishop-rtc",
+      "title": "Death Comes for the Archbishop",
+      "author": "Willa Cather",
+      "lang": "English",
+      "translation": "",
+      "series": "",
+      "host": "Henry Eliot",
+      "publication": "Read the Classics",
+      "url": "https://henryeliot.substack.com/p/schedule-and-archive",
+      "start": "2027-01-01",
+      "end": "2027-01-29",
+      "freq": "weekly",
+      "cadence": "About six chapters each week",
+      "access": "paid",
+      "notes": ""
     },
     {
       "id": "eye-in-the-door-fat",
