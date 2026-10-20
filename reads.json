@@ -87,6 +87,23 @@
       "notes": "Bilingual: read the Chinese original, the English translation, or both. Posts are written in English."
     },
     {
+      "id": "wuthering-heights-ss",
+      "title": "Wuthering Heights",
+      "author": "Emily Brontë",
+      "lang": "English",
+      "translation": "",
+      "series": "The Living & The Dead of Wuthering Heights",
+      "host": "Jessica Leigh Allen",
+      "publication": "Symbolism & Structure",
+      "url": "https://symbolismandstructure.substack.com/p/the-living-and-the-dead-of-wuthering-heights",
+      "start": "2026-09-20",
+      "end": "2026-11-21",
+      "freq": "weekly",
+      "cadence": "Three to six chapters a week",
+      "access": "mixed",
+      "notes": "Seasonal, themed close readings, ideal for first-time readers and rereaders alike."
+    },
+    {
       "id": "eugene-onegin-cams",
       "title": "Eugene Onegin",
       "author": "Alexander Pushkin",
@@ -512,6 +529,23 @@
       "notes": ""
     },
     {
+      "id": "pedro-paramo-rtc",
+      "title": "Pedro Páramo",
+      "author": "Juan Rulfo",
+      "lang": "Spanish",
+      "translation": "Douglas J. Weatherford",
+      "series": "",
+      "host": "Henry Eliot",
+      "publication": "Read the Classics",
+      "url": "https://henryeliot.substack.com/p/schedule-and-archive",
+      "start": "2027-02-05",
+      "end": "2027-02-19",
+      "freq": "weekly",
+      "cadence": "",
+      "access": "paid",
+      "notes": ""
+    },
+    {
       "id": "a-fine-balance-bhbc",
       "title": "A Fine Balance",
       "author": "Rohinton Mistry",
@@ -578,6 +612,40 @@
       "cadence": "Weekly Thursday discussions for paid subscribers; a monthly discussion open to everyone",
       "notes": "",
       "access": "mixed"
+    },
+    {
+      "id": "hundred-years-solitude-rtc",
+      "title": "One Hundred Years of Solitude",
+      "author": "Gabriel García Márquez",
+      "lang": "Spanish",
+      "translation": "Gregory Rabassa",
+      "series": "",
+      "host": "Henry Eliot",
+      "publication": "Read the Classics",
+      "url": "https://henryeliot.substack.com/p/schedule-and-archive",
+      "start": "2027-02-26",
+      "end": "2027-04-02",
+      "freq": "weekly",
+      "cadence": "",
+      "access": "paid",
+      "notes": ""
+    },
+    {
+      "id": "country-girls-rtc",
+      "title": "The Country Girls",
+      "author": "Edna O'Brien",
+      "lang": "English",
+      "translation": "",
+      "series": "",
+      "host": "Henry Eliot",
+      "publication": "Read the Classics",
+      "url": "https://henryeliot.substack.com/p/schedule-and-archive",
+      "start": "2027-04-09",
+      "end": "2027-04-30",
+      "freq": "weekly",
+      "cadence": "",
+      "access": "paid",
+      "notes": ""
     },
     {
       "id": "dubliners-fat",
