@@ -1,6 +1,23 @@
 {
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "reads": [
+    {
+      "id": "story-of-civilization-sky",
+      "title": "The Story of Civilization",
+      "author": "Will Durant",
+      "lang": "English",
+      "translation": "",
+      "series": "Earth Explorer",
+      "host": "Jack",
+      "publication": "skyloper",
+      "url": "https://substack.com/@skyloper",
+      "start": "2025-09-20",
+      "end": "2026-10-19",
+      "freq": "daily",
+      "cadence": "A daily reading through the whole history",
+      "access": "free",
+      "notes": "Read in Chinese translation."
+    },
     {
       "id": "proust-gallery-swann-tre",
       "title": "Swann's Way",
@@ -34,6 +51,23 @@
       "cadence": "About 30 pages a week",
       "access": "free",
       "notes": "Free for all subscribers: weekly recaps, a running character guide, Victorian context, and a dedicated chat space on Substack and Discord."
+    },
+    {
+      "id": "city-of-ladies-15cf",
+      "title": "The Book of the City of Ladies",
+      "author": "Christine de Pizan",
+      "lang": "French",
+      "translation": "Rosalind Brown-Grant",
+      "series": "",
+      "host": "15thCenturyFeminist",
+      "publication": "15thCenturyFeminist",
+      "url": "https://15thcfeminist.substack.com/p/an-invitation-to-close-read-the-book-a9c",
+      "start": "2026-08-28",
+      "end": "2027-07-30",
+      "freq": "monthly",
+      "cadence": "Roughly 20 to 25 pages each month",
+      "access": "paid",
+      "notes": ""
     },
     {
       "id": "anna-karenina-cams",
@@ -223,6 +257,23 @@
       "access": "mixed"
     },
     {
+      "id": "mill-on-the-floss-aps",
+      "title": "The Mill on the Floss",
+      "author": "George Eliot",
+      "lang": "English",
+      "translation": "",
+      "series": "APS Together",
+      "host": "Yiyun Li",
+      "publication": "A Public Space",
+      "url": "https://apublicspace.org/aps-together/the-mill-on-the-floss",
+      "start": "2026-10-29",
+      "end": "2026-12-01",
+      "freq": "daily",
+      "cadence": "About 15 pages a day",
+      "access": "free",
+      "notes": ""
+    },
+    {
       "id": "gullivers-travels-rtc",
       "title": "Gulliver's Travels",
       "author": "Jonathan Swift",
@@ -272,6 +323,23 @@
       "cadence": "A month of preparation, then one section each month",
       "access": "paid",
       "notes": "Everyone is welcome, whether a complete medieval newbie or a seasoned pro."
+    },
+    {
+      "id": "once-future-witches-sb",
+      "title": "The Once and Future Witches",
+      "author": "Alix E. Harrow",
+      "lang": "English",
+      "translation": "",
+      "series": "Sexy queer witch lit",
+      "host": "Sera Bonds",
+      "publication": "serabonds",
+      "url": "https://substack.com/@serabonds",
+      "start": "2026-11-08",
+      "end": "2027-01-10",
+      "freq": "weekly",
+      "cadence": "One chapter every Sunday",
+      "access": "free",
+      "notes": ""
     },
     {
       "id": "swanns-way-ct",
