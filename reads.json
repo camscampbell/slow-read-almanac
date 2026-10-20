@@ -2,23 +2,6 @@
   "updated": "2026-10-20",
   "reads": [
     {
-      "id": "story-of-civilization-sky",
-      "title": "The Story of Civilization",
-      "author": "Will Durant",
-      "lang": "English",
-      "translation": "",
-      "series": "Earth Explorer",
-      "host": "Jack",
-      "publication": "skyloper",
-      "url": "https://substack.com/@skyloper",
-      "start": "2025-09-20",
-      "end": "2026-10-19",
-      "freq": "daily",
-      "cadence": "A daily reading through the whole history",
-      "access": "free",
-      "notes": "Read in Chinese translation."
-    },
-    {
       "id": "proust-gallery-swann-tre",
       "title": "Swann's Way",
       "author": "Marcel Proust",
