@@ -3,7 +3,7 @@
   --bg: #EDF0EC; --surface: #F8F9F6; --ink: #1B2430; --muted: #5A6570; --rule: #CAD1CB; --soft: #E2E7E2;
   --accent: #6A2C5B; --accent-ink: #FFFFFF; --accent-soft: #EADCE5;
   --ok: #2F6B45; --ok-soft: #DCEBDF; --warn: #8A5A12; --warn-soft: #F3E6CC; --done: #5A6570; --done-soft: #E2E6E9;
-  --lang-1: #2F5D7C; --lang-2: #7A4A86; --lang-3: #4F7A4A; --lang-4: #A0662A; --lang-5: #8A3B3B; --lang-6: #3F6F73;
+  --lang-1: #2F5D7C; --lang-2: #7A4A86; --lang-3: #4F7A4A; --lang-4: #A0662A; --lang-5: #8A3B3B; --lang-6: #3F6F73; --lang-7: #B0466E; --lang-8: #5B5FA8; --lang-9: #8C7A1E; --lang-10: #2E7D5B; --lang-11: #9B5A3C; --lang-12: #6B6B6B;
   --f-display: "Gloock", "Georgia", "Times New Roman", serif;
   --f-body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
   --f-data: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
@@ -13,13 +13,13 @@
   --bg: #11161C; --surface: #19202A; --ink: #E4E8EC; --muted: #9AA4AE; --rule: #2D3742; --soft: #222B36;
   --accent: #D29AC4; --accent-ink: #1A1018; --accent-soft: #3A2535;
   --ok: #8FCB9F; --ok-soft: #1F3326; --warn: #E2B66A; --warn-soft: #3A2E18; --done: #9AA4AE; --done-soft: #26303A;
-  --lang-1: #79A9CC; --lang-2: #B48CC2; --lang-3: #8DBB86; --lang-4: #D9A060; --lang-5: #D08080; --lang-6: #7EB4B8;
+  --lang-1: #79A9CC; --lang-2: #B48CC2; --lang-3: #8DBB86; --lang-4: #D9A060; --lang-5: #D08080; --lang-6: #7EB4B8; --lang-7: #E28AAE; --lang-8: #9EA2E6; --lang-9: #D4C266; --lang-10: #74C9A2; --lang-11: #DCA084; --lang-12: #B3B3B3;
   color-scheme: dark; } }
 :root[data-theme="dark"] {
   --bg: #11161C; --surface: #19202A; --ink: #E4E8EC; --muted: #9AA4AE; --rule: #2D3742; --soft: #222B36;
   --accent: #D29AC4; --accent-ink: #1A1018; --accent-soft: #3A2535;
   --ok: #8FCB9F; --ok-soft: #1F3326; --warn: #E2B66A; --warn-soft: #3A2E18; --done: #9AA4AE; --done-soft: #26303A;
-  --lang-1: #79A9CC; --lang-2: #B48CC2; --lang-3: #8DBB86; --lang-4: #D9A060; --lang-5: #D08080; --lang-6: #7EB4B8;
+  --lang-1: #79A9CC; --lang-2: #B48CC2; --lang-3: #8DBB86; --lang-4: #D9A060; --lang-5: #D08080; --lang-6: #7EB4B8; --lang-7: #E28AAE; --lang-8: #9EA2E6; --lang-9: #D4C266; --lang-10: #74C9A2; --lang-11: #DCA084; --lang-12: #B3B3B3;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }

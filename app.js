@@ -31,7 +31,12 @@
   function slug(s) { return String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40) || "read"; }
   function langs() { var seen = []; reads.forEach(function (r) { var l = (r.lang || "Other").trim(); if (seen.indexOf(l) < 0) seen.push(l); }); return seen; }
   function pubs() { var seen = {}; reads.forEach(function (r) { var k = (r.publication || r.host || "").trim(); if (!k) return; if (!seen[k]) seen[k] = { name: k, host: (r.host || "").trim(), n: 0 }; seen[k].n++; }); return Object.keys(seen).sort(function (a, b) { return a.localeCompare(b); }).map(function (k) { return seen[k]; }); }
-  function langColor(l) { var list = langs(); var i = list.indexOf((l || "Other").trim()); return "var(--lang-" + ((i < 0 ? 0 : i) % 6 + 1) + ")"; }
+  var LANG_SLOT = { "English": 1, "Russian": 2, "French": 3, "Spanish": 4, "Italian": 5, "Japanese": 6, "Chinese": 7, "Latin": 8, "German and French": 9, "Dutch and French": 10, "German": 11 };
+  function langColor(l) {
+    var k = (l || "Other").trim(), n = LANG_SLOT[k];
+    if (!n) { var h = 0; for (var i = 0; i < k.length; i++) h = (h * 31 + k.charCodeAt(i)) >>> 0; n = h % 12 + 1; }
+    return "var(--lang-" + n + ")";
+  }
   function status(r) {
     var s = parseD(r.start), e = parseD(r.end);
     if (e < today) return "finished";
