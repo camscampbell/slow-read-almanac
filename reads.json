@@ -19,6 +19,23 @@
       "notes": "An art companion to Volume One, already under way: join at any post. Reading Proust alongside, in any translation, is recommended but not required."
     },
     {
+      "id": "women-who-run-stb",
+      "title": "Women Who Run with the Wolves",
+      "author": "Clarissa Pinkola Estés",
+      "lang": "English",
+      "translation": "",
+      "series": "",
+      "host": "Christina Rivera",
+      "publication": "Sing the Bones",
+      "url": "https://singthebones.substack.com",
+      "start": "2026-05-01",
+      "end": "2027-10-01",
+      "freq": "weekly",
+      "cadence": "Readings of under 10 pages each week, with prompts and community comments",
+      "access": "mixed",
+      "notes": "A reading group for people who identify as women."
+    },
+    {
       "id": "david-copperfield-trs",
       "title": "David Copperfield",
       "author": "Charles Dickens",
@@ -526,6 +543,23 @@
       "freq": "monthly",
       "cadence": "About 50 pages a month",
       "access": "mixed",
+      "notes": ""
+    },
+    {
+      "id": "iliad-rr",
+      "title": "The Iliad",
+      "author": "Homer",
+      "lang": "Ancient Greek",
+      "translation": "Robert Fagles (or choose your own)",
+      "series": "Reading Revisited Society",
+      "host": "Kelsie Hartley",
+      "publication": "Reading Revisited",
+      "url": "https://readingrevisited.substack.com/p/reading-revisited-society-read-along",
+      "start": "2027-01-25",
+      "end": "2027-12-27",
+      "freq": "monthly",
+      "cadence": "Three books of the poem a month",
+      "access": "paid",
       "notes": ""
     },
     {
