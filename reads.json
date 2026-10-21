@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "reads": [
     {
       "id": "proust-gallery-swann-tre",
@@ -161,7 +161,7 @@
       "lang": "English",
       "translation": "",
       "series": "",
-      "host": "Julie",
+      "host": "Julie Witmer",
       "publication": "Elizabeth Goudge Book Club",
       "url": "https://elizabethgoudgebookclub.substack.com/p/getting-ready-for-october-8ed",
       "start": "2026-10-01",
@@ -340,6 +340,23 @@
       "cadence": "A month of preparation, then one section each month",
       "access": "paid",
       "notes": "Everyone is welcome, whether a complete medieval newbie or a seasoned pro."
+    },
+    {
+      "id": "city-of-bells-egbc",
+      "title": "A City of Bells",
+      "author": "Elizabeth Goudge",
+      "lang": "English",
+      "translation": "",
+      "series": "Torminster books",
+      "host": "Julie Witmer",
+      "publication": "Elizabeth Goudge Book Club",
+      "url": "https://elizabethgoudgebookclub.substack.com/p/getting-ready-for-november-elizabeth-goudge-readalong-a-city-of-bells",
+      "start": "2026-11-03",
+      "end": "2026-11-26",
+      "freq": "weekly",
+      "cadence": "Several chapters a week",
+      "access": "mixed",
+      "notes": "Live Zoom discussion at the end of the month."
     },
     {
       "id": "once-future-witches-sb",
