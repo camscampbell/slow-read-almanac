@@ -35,7 +35,7 @@ Edit `reads.json`. Each read looks like this:
 ```
 
 - `id` must be unique: letters, numbers and hyphens.
-- Dates are `YYYY-MM-DD`.
+- Dates are `YYYY-MM-DD`. Leave `end` empty for a read with no fixed end date.
 - `freq` is one of `weekly`, `fortnightly`, `daily`, `monthly` or `other`.
 - `series` groups related books, for example `Wolf Crawl`.
 - `access` is `free`, `mixed` (free with paid extras) or `paid`. Leave it out if unknown, and no label is shown.

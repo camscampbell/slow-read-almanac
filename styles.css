@@ -166,3 +166,6 @@ footer { color: var(--muted); font-size: 13px; border-top: 1px solid var(--rule)
 .tl-months { position: relative; }
 .tl-now { position: absolute; top: 0; bottom: -1px; width: 0; border-left: 2px solid var(--accent); pointer-events: none; }
 .tl-now span { position: absolute; bottom: 2px; left: 4px; font-family: var(--f-data); font-style: normal; font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); background: var(--surface); padding: 0 3px; }
+
+/* Reads with no fixed end date: the timeline bar fades out to the right */
+.tl-bar.open { -webkit-mask-image: linear-gradient(to right, #000 75%, transparent); mask-image: linear-gradient(to right, #000 75%, transparent); border-radius: 3px 0 0 3px; }

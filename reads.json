@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21",
+  "updated": "2026-10-22",
   "reads": [
     {
       "id": "proust-gallery-swann-tre",
@@ -17,6 +17,23 @@
       "cadence": "One artist and one artwork each month, looked at slowly alongside the novel",
       "access": "mixed",
       "notes": "An art companion to Volume One, already under way: join at any post. Reading Proust alongside, in any translation, is recommended but not required."
+    },
+    {
+      "id": "morte-darthur-rka",
+      "title": "Le Morte d'Arthur",
+      "author": "Thomas Malory",
+      "lang": "English",
+      "translation": "",
+      "series": "",
+      "host": "Peter C. Meilaender",
+      "publication": "Reading King Arthur",
+      "url": "https://readingkingarthur.substack.com/p/reading-king-arthur",
+      "start": "2026-02-16",
+      "end": "",
+      "freq": "weekly",
+      "cadence": "About 10 to 15 pages a week until the end",
+      "access": "free",
+      "notes": "No fixed end date: the read finishes whenever it reaches the end of the book."
     },
     {
       "id": "women-who-run-stb",
@@ -68,6 +85,23 @@
       "cadence": "Roughly 20 to 25 pages each month",
       "access": "paid",
       "notes": ""
+    },
+    {
+      "id": "forsyte-chronicles-fmb",
+      "title": "The Forsyte Chronicles",
+      "author": "John Galsworthy",
+      "lang": "English",
+      "translation": "",
+      "series": "",
+      "host": "Peter C. Meilaender",
+      "publication": "From My Bookshelf",
+      "url": "https://frommybookshelf.substack.com/p/celebrating-two-years-of-from-my",
+      "start": "2026-09-01",
+      "end": "2027-05-31",
+      "freq": "monthly",
+      "cadence": "One novel a month, with a post at the end of each month",
+      "access": "free",
+      "notes": "All nine novels across the three trilogies, finishing next May with a bonus volume of Forsyte stories."
     },
     {
       "id": "anna-karenina-cams",

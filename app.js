@@ -37,8 +37,11 @@
     if (!n) { var h = 0; for (var i = 0; i < k.length; i++) h = (h * 31 + k.charCodeAt(i)) >>> 0; n = h % 12 + 1; }
     return "var(--lang-" + n + ")";
   }
+  function isOpen(r) { return !r.end; }
+  function endOf(r) { return r.end ? parseD(r.end) : addDays(today, 3650); }
+  function endLabel(r) { return r.end ? fmt(parseD(r.end)) : "ongoing"; }
   function status(r) {
-    var s = parseD(r.start), e = parseD(r.end);
+    var s = parseD(r.start), e = endOf(r);
     if (e < today) return "finished";
     if (s > today) return daysBetween(today, s) <= 30 ? "soon" : "upcoming";
     return "progress";
@@ -60,6 +63,7 @@
   }
   function progressOf(r) {
     var s = parseD(r.start), e = parseD(r.end);
+    if (isOpen(r)) return { label: "Week " + (Math.floor(daysBetween(s, today) / 7) + 1) + ", no fixed end", pct: null };
     var totalW = Math.floor(daysBetween(s, e) / 7) + 1;
     var curW = Math.min(totalW, Math.floor(daysBetween(s, today) / 7) + 1);
     var pct = Math.max(0, Math.min(100, daysBetween(s, today) / Math.max(1, daysBetween(s, e)) * 100));
@@ -109,7 +113,7 @@
     var box = el("timeline");
     if (!list.length) { box.innerHTML = '<p class="empty">No reads match these filters yet.</p>'; el("legend").innerHTML = ""; return; }
     var min = today, max = today;
-    list.forEach(function (r) { var s = parseD(r.start), e = parseD(r.end); if (s < min) min = s; if (e > max) max = e; });
+    list.forEach(function (r) { var s = parseD(r.start), e = isOpen(r) ? s : parseD(r.end); if (s < min) min = s; if (e > max) max = e; });
     var from = new Date(min.getFullYear(), min.getMonth(), 1);
     var to = new Date(max.getFullYear(), max.getMonth() + 1, 1);
     if ((to.getFullYear() - from.getFullYear()) * 12 + to.getMonth() - from.getMonth() < 6) to = new Date(from.getFullYear(), from.getMonth() + 6, 1);
@@ -125,10 +129,10 @@
       head += "<span>" + MONTHS[m.getMonth()] + (i === 0 || m.getMonth() === 0 ? " <b>" + m.getFullYear() + "</b>" : "") + "</span>";
     }
     var rows = list.map(function (r) {
-      var s = parseD(r.start), e = addDays(parseD(r.end), 1), st = status(r);
+      var s = parseD(r.start), e = isOpen(r) ? to : addDays(parseD(r.end), 1), st = status(r);
       var left = pos(s) * 100, right = e >= to ? 100 : pos(e) * 100;
       return '<div class="tl-row"><div class="tl-label"><span class="t">' + esc(r.title) + '</span><span class="h">' + esc(r.series ? r.series + " · " + (r.publication || r.host) : (r.publication || r.host)) + "</span></div>" +
-        '<div class="tl-track"><button type="button" class="tl-bar ' + st + '" data-jump="' + esc(r.id) + '" style="left:' + left.toFixed(3) + "%;width:" + Math.max(0.4, right - left).toFixed(3) + "%;--c:" + langColor(r.lang) + '" aria-label="' + esc(r.title + ", " + fmt(s) + " to " + fmt(parseD(r.end))) + '" title="' + esc(r.title + " · " + fmt(s) + " – " + fmt(parseD(r.end))) + '"></button></div></div>';
+        '<div class="tl-track"><button type="button" class="tl-bar ' + st + (isOpen(r) ? " open" : "") + '" data-jump="' + esc(r.id) + '" style="left:' + left.toFixed(3) + "%;width:" + Math.max(0.4, right - left).toFixed(3) + "%;--c:" + langColor(r.lang) + '" aria-label="' + esc(r.title + ", " + fmt(s) + " to " + endLabel(r)) + '" title="' + esc(r.title + " · " + fmt(s) + " – " + endLabel(r)) + '"></button></div></div>';
     }).join("");
     box.innerHTML = '<div class="tl" style="--months:' + n + '"><div class="tl-row tl-head"><div class="tl-label"><span class="h">Read</span></div><div class="tl-months">' + head +
       (today >= from && today < to ? '<i class="tl-now" style="left:' + (pos(today) * 100).toFixed(3) + '%"><span>Today</span></i>' : "") + "</div></div>" + rows +
@@ -139,7 +143,7 @@
     requestAnimationFrame(function () { if (box.scrollWidth > box.clientWidth) box.scrollLeft = Math.max(0, tp * box.scrollWidth - box.clientWidth * 0.35); });
   }
   function card(r) {
-    var st = status(r), s = parseD(r.start), e = parseD(r.end), url = safeUrl(r.url);
+    var st = status(r), s = parseD(r.start), e = isOpen(r) ? s : parseD(r.end), url = safeUrl(r.url);
     var p = st === "progress" ? progressOf(r) : null;
     var gcal = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=" + encodeURIComponent("Slow read: " + r.title + (r.publication ? " (" + r.publication + ")" : "")) +
       "&dates=" + compact(s) + "/" + compact(addDays(e, 1)) + "&details=" + encodeURIComponent([r.cadence, url].filter(Boolean).join("\n"));
@@ -148,9 +152,9 @@
       (r.series ? '<p class="eyebrow">' + esc(r.series) + "</p>" : "") + "<h3>" + esc(r.title) + "</h3>" +
       '<p class="byline">' + esc(r.author) + (r.translation ? " · translated by " + esc(r.translation) : "") + "</p>" +
       "<p>" + (url ? '<a href="' + esc(url) + '" target="_blank" rel="noopener">' + esc(r.publication || url) + "</a>" : esc(r.publication)) + (r.host ? " · hosted by " + esc(r.host) : "") + "</p>" +
-      '<p class="dates">' + fmt(s) + " → " + fmt(e) + "</p>" +
+      '<p class="dates">' + fmt(s) + " → " + endLabel(r) + "</p>" +
       (r.cadence || FREQ[r.freq] ? '<p class="cadence">' + esc(r.cadence || FREQ[r.freq]) + "</p>" : "") +
-      (p ? '<div class="prog" aria-hidden="true"><i style="width:' + p.pct.toFixed(1) + '%"></i></div><p class="prog-label">' + p.label + "</p>" : "") +
+      (p ? (p.pct === null ? "" : '<div class="prog" aria-hidden="true"><i style="width:' + p.pct.toFixed(1) + '%"></i></div>') + '<p class="prog-label">' + p.label + "</p>" : "") +
       (r.notes ? '<p class="notes">' + esc(r.notes) + "</p>" : "") +
       '<div class="card-actions"><a class="btn-sm" href="' + gcal + '" target="_blank" rel="noopener">Add to Google Calendar</a>' +
       '<button type="button" class="btn-sm" data-ics="' + esc(r.id) + '">Download .ics</button></div></article>';
@@ -224,13 +228,13 @@
   /* ---------- .ics ---------- */
   function icsEscape(s) { return String(s || "").replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\n/g, "\\n"); }
   function icsEvents(r) {
-    var s = parseD(r.start), e = parseD(r.end), stamp = compact(today) + "T000000Z";
+    var s = parseD(r.start), e = isOpen(r) ? s : parseD(r.end), stamp = compact(today) + "T000000Z";
     var desc = icsEscape([(r.series ? r.series + ": " : "") + r.author + (r.translation ? ", translated by " + r.translation : ""), r.cadence, r.url].filter(Boolean).join("\n"));
     var out = ["BEGIN:VEVENT", "UID:" + r.id + "@slow-read-almanac", "DTSTAMP:" + stamp, "DTSTART;VALUE=DATE:" + compact(s), "DTEND;VALUE=DATE:" + compact(addDays(e, 1)),
       "SUMMARY:" + icsEscape("Slow read: " + r.title + (r.publication ? " (" + r.publication + ")" : "")), "DESCRIPTION:" + desc, "TRANSP:TRANSPARENT", "END:VEVENT"];
     if (r.freq === "weekly" || r.freq === "fortnightly") {
       out = out.concat(["BEGIN:VEVENT", "UID:" + r.id + "-instalments@slow-read-almanac", "DTSTAMP:" + stamp, "DTSTART;VALUE=DATE:" + compact(s), "DTEND;VALUE=DATE:" + compact(addDays(s, 1)),
-        "RRULE:FREQ=WEEKLY;INTERVAL=" + (r.freq === "weekly" ? 1 : 2) + ";UNTIL=" + compact(e), "SUMMARY:" + icsEscape(r.title + ": new instalment"), "DESCRIPTION:" + desc, "TRANSP:TRANSPARENT", "END:VEVENT"]);
+        "RRULE:FREQ=WEEKLY;INTERVAL=" + (r.freq === "weekly" ? 1 : 2) + (isOpen(r) ? "" : ";UNTIL=" + compact(e)), "SUMMARY:" + icsEscape(r.title + ": new instalment"), "DESCRIPTION:" + desc, "TRANSP:TRANSPARENT", "END:VEVENT"]);
     }
     return out;
   }
