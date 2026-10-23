@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22",
+  "updated": "2026-10-23",
   "reads": [
     {
       "id": "proust-gallery-swann-tre",
@@ -527,6 +527,23 @@
       "cadence": "About six chapters each week",
       "access": "paid",
       "notes": ""
+    },
+    {
+      "id": "rhys-novels-anoto",
+      "title": "The Novels of Jean Rhys",
+      "author": "Jean Rhys",
+      "lang": "English",
+      "translation": "",
+      "series": "Reading Rhys Literary Salon",
+      "host": "Kate Jones",
+      "publication": "A Narrative of Their Own",
+      "url": "https://anarrativeoftheirown.substack.com/p/introducing-the-reading-rhys-literary",
+      "start": "2027-01-03",
+      "end": "2027-05-26",
+      "freq": "monthly",
+      "cadence": "One novel a month: an introduction on the first Sunday, a discussion post on the last Wednesday",
+      "access": "mixed",
+      "notes": "All five novels, beginning with Quartet in January, along with Rhys's life and related themes."
     },
     {
       "id": "eye-in-the-door-fat",
