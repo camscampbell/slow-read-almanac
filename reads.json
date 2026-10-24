@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "reads": [
     {
       "id": "proust-gallery-swann-tre",
@@ -342,6 +342,23 @@
       "access": "paid"
     },
     {
+      "author": "James Joyce",
+      "lang": "English",
+      "translation": "",
+      "series": "Multiple Joyce",
+      "host": "Elizabeth Graham Madden",
+      "publication": "Multiple Joyce",
+      "url": "https://substack.com/@elizabethgrahammadden1",
+      "freq": "weekly",
+      "cadence": "Essays posted through each week",
+      "access": "free",
+      "id": "portrait-mj",
+      "title": "A Portrait of the Artist as a Young Man",
+      "start": "2026-11-01",
+      "end": "2026-12-05",
+      "notes": "Close analytical reading, with stylistic and contextual information and literary theory."
+    },
+    {
       "id": "regeneration-fat",
       "title": "Regeneration",
       "author": "Pat Barker",
@@ -527,6 +544,23 @@
       "cadence": "About six chapters each week",
       "access": "paid",
       "notes": ""
+    },
+    {
+      "author": "James Joyce",
+      "lang": "English",
+      "translation": "",
+      "series": "Multiple Joyce",
+      "host": "Elizabeth Graham Madden",
+      "publication": "Multiple Joyce",
+      "url": "https://substack.com/@elizabethgrahammadden1",
+      "freq": "weekly",
+      "cadence": "Essays posted through each week",
+      "access": "free",
+      "id": "ulysses-mj",
+      "title": "Ulysses",
+      "start": "2027-01-01",
+      "end": "2027-09-30",
+      "notes": "Close analytical reading, with stylistic analysis, historical context, literary theory and general discussion."
     },
     {
       "id": "rhys-novels-anoto",
@@ -935,6 +969,23 @@
       "cadence": "Weekly Thursday discussions for paid subscribers; a monthly discussion open to everyone",
       "notes": "",
       "access": "mixed"
+    },
+    {
+      "author": "James Joyce",
+      "lang": "English",
+      "translation": "",
+      "series": "Multiple Joyce",
+      "host": "Elizabeth Graham Madden",
+      "publication": "Multiple Joyce",
+      "url": "https://substack.com/@elizabethgrahammadden1",
+      "freq": "weekly",
+      "cadence": "Essays posted through each week",
+      "access": "free",
+      "id": "finnegans-wake-mj",
+      "title": "Finnegans Wake",
+      "start": "2027-11-01",
+      "end": "2028-12-31",
+      "notes": "A literary journey of exploration and adventure. Written in English and many other languages."
     },
     {
       "id": "miss-macintosh-ri",
