@@ -2,6 +2,23 @@
   "updated": "2026-10-26",
   "reads": [
     {
+      "id": "neapolitan-novels-mby",
+      "title": "The Neapolitan Novels",
+      "author": "Elena Ferrante",
+      "lang": "Italian",
+      "translation": "Ann Goldstein",
+      "series": "My Brilliant Year",
+      "host": "Nora",
+      "publication": "My Brilliant Year",
+      "url": "https://mybrilliantyear.substack.com/p/brilliant-year-basics",
+      "start": "2026-01-01",
+      "end": "2026-12-31",
+      "freq": "weekly",
+      "cadence": "One or two chapters a day, all year",
+      "access": "free",
+      "notes": "All four novels across 2026. A second year is planned for 2027."
+    },
+    {
       "id": "proust-gallery-swann-tre",
       "title": "Swann's Way",
       "author": "Marcel Proust",
