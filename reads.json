@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24",
+  "updated": "2026-10-26",
   "reads": [
     {
       "id": "proust-gallery-swann-tre",
@@ -255,6 +255,23 @@
       "cadence": "About 30 pages every two weeks",
       "access": "paid",
       "notes": "Paid subscribers get fortnightly recaps, a running character guide, notes on the original Italian and historical background, plus the subscriber chat and Discord."
+    },
+    {
+      "id": "house-of-mirth-cr",
+      "title": "The House of Mirth",
+      "author": "Edith Wharton",
+      "lang": "English",
+      "translation": "",
+      "series": "Closely Reading book club",
+      "host": "Haley Larsen",
+      "publication": "Closely Reading",
+      "url": "https://haleyalarsen.substack.com/p/read-the-house-of-mirth-with-me-a9b",
+      "start": "2026-10-05",
+      "end": "2026-12-12",
+      "freq": "weekly",
+      "cadence": "A few chapters each week",
+      "access": "mixed",
+      "notes": "Literary guidance and close-reading tips from a literature PhD."
     },
     {
       "id": "cheerful-weather-clds",
@@ -646,6 +663,23 @@
       "cadence": "About 50 pages a month",
       "access": "mixed",
       "notes": ""
+    },
+    {
+      "id": "beethoven-sonatas-bb",
+      "title": "The 32 Piano Sonatas",
+      "author": "Ludwig van Beethoven",
+      "lang": "Music",
+      "translation": "",
+      "series": "32 Sonatas Slow Listen",
+      "host": "Heather Taves",
+      "publication": "Beyond Beethoven",
+      "url": "https://heathertaves.substack.com/p/launch-info",
+      "start": "2027-01-23",
+      "end": "2027-08-28",
+      "freq": "weekly",
+      "cadence": "One sonata a week: a video performance plus essays on the sonata and Beethoven's times",
+      "access": "mixed",
+      "notes": "A slow listen rather than a read. No music background needed."
     },
     {
       "id": "iliad-rr",
