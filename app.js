@@ -176,6 +176,7 @@
   function renderSlip() {
     var intro = '<div class="slip-intro"><p class="eyebrow">Submission slip</p><h2 id="slip-h">Hosting a slow read?</h2>' +
       "<p>Tell us about a slow read running on Substack. Every submission is checked by hand before it appears on the calendar.</p>" +
+      "<p>The almanac only lists reads that run on a Substack publication. Reads hosted on other websites or blogs are not included.</p>" +
       "<p>Give the exact start and end dates of your schedule, and a link to your announcement post if you have one.</p></div>";
     if (SUBMIT_FORM_URL) {
       el("submit").innerHTML = intro + '<div><p>Submissions go through a short Google Form. It takes about two minutes, and your contact details are only seen by Cams.</p><p><a class="btn" href="' + esc(SUBMIT_FORM_URL) + '" target="_blank" rel="noopener">Open the submission form</a></p></div>';
