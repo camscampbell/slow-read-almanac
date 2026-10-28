@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-28",
   "reads": [
     {
       "id": "neapolitan-novels-mby",
@@ -682,6 +682,23 @@
       "notes": ""
     },
     {
+      "translation": "",
+      "series": "La portée de nos choix",
+      "host": "Andréanne",
+      "publication": "Crush littéraire",
+      "url": "https://crushlitteraire.substack.com/p/une-invitation-a-lire-crime-et-chatiment",
+      "freq": "weekly",
+      "cadence": "55 to 65 pages a week",
+      "access": "free",
+      "id": "crime-chatiment-cl",
+      "title": "Crime et Châtiment",
+      "author": "Fyodor Dostoevsky",
+      "lang": "Russian",
+      "start": "2027-01-11",
+      "end": "2027-03-21",
+      "notes": "A French-language book club, read in French, with historical and cultural context, artistic pairings and discussion. Crime and Punishment, first of three novels."
+    },
+    {
       "id": "beethoven-sonatas-bb",
       "title": "The 32 Piano Sonatas",
       "author": "Ludwig van Beethoven",
@@ -818,6 +835,23 @@
       "notes": ""
     },
     {
+      "translation": "",
+      "series": "La portée de nos choix",
+      "host": "Andréanne",
+      "publication": "Crush littéraire",
+      "url": "https://crushlitteraire.substack.com/p/une-invitation-a-lire-crime-et-chatiment",
+      "freq": "weekly",
+      "cadence": "55 to 65 pages a week",
+      "access": "free",
+      "id": "beloved-cl",
+      "title": "Beloved",
+      "author": "Toni Morrison",
+      "lang": "English",
+      "start": "2027-04-05",
+      "end": "2027-05-23",
+      "notes": "A French-language book club, read in French, with historical and cultural context, artistic pairings and discussion. Second of three novels."
+    },
+    {
       "id": "country-girls-rtc",
       "title": "The Country Girls",
       "author": "Edna O'Brien",
@@ -901,6 +935,23 @@
       "cadence": "6 weeks",
       "notes": "The first post is free to everyone; after that it needs a paid subscription (£5 a month or £50 a year, with 20% off group annual subscriptions). Includes a podcast version of each post.",
       "access": "paid"
+    },
+    {
+      "translation": "",
+      "series": "La portée de nos choix",
+      "host": "Andréanne",
+      "publication": "Crush littéraire",
+      "url": "https://crushlitteraire.substack.com/p/une-invitation-a-lire-crime-et-chatiment",
+      "freq": "weekly",
+      "cadence": "55 to 65 pages a week",
+      "access": "free",
+      "id": "vestiges-du-jour-cl",
+      "title": "Les Vestiges du jour",
+      "author": "Kazuo Ishiguro",
+      "lang": "English",
+      "start": "2027-06-07",
+      "end": "2027-07-11",
+      "notes": "A French-language book club, read in French, with historical and cultural context, artistic pairings and discussion. The Remains of the Day, third of three novels."
     },
     {
       "id": "cities-of-the-plain-rtc",
