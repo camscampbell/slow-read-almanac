@@ -113,7 +113,7 @@
     var box = el("timeline");
     if (!list.length) { box.innerHTML = '<p class="empty">No reads match these filters yet.</p>'; el("legend").innerHTML = ""; return; }
     var min = today, max = today;
-    list.forEach(function (r) { var s = parseD(r.start), e = isOpen(r) ? s : parseD(r.end); if (s < min) min = s; if (e > max) max = e; });
+    list.forEach(function (r) { var s = parseD(r.start), e = isOpen(r) ? s : parseD(r.end), cap = new Date(s.getFullYear(), s.getMonth() + 18, s.getDate()); if (e > cap) e = cap; if (s < min) min = s; if (e > max) max = e; });
     var from = new Date(min.getFullYear(), min.getMonth(), 1);
     var to = new Date(max.getFullYear(), max.getMonth() + 1, 1);
     if ((to.getFullYear() - from.getFullYear()) * 12 + to.getMonth() - from.getMonth() < 6) to = new Date(from.getFullYear(), from.getMonth() + 6, 1);
@@ -132,7 +132,7 @@
       var s = parseD(r.start), e = isOpen(r) ? to : addDays(parseD(r.end), 1), st = status(r);
       var left = pos(s) * 100, right = e >= to ? 100 : pos(e) * 100;
       return '<div class="tl-row"><div class="tl-label"><span class="t">' + esc(r.title) + '</span><span class="h">' + esc(r.series ? r.series + " · " + (r.publication || r.host) : (r.publication || r.host)) + "</span></div>" +
-        '<div class="tl-track"><button type="button" class="tl-bar ' + st + (isOpen(r) ? " open" : "") + '" data-jump="' + esc(r.id) + '" style="left:' + left.toFixed(3) + "%;width:" + Math.max(0.4, right - left).toFixed(3) + "%;--c:" + langColor(r.lang) + '" aria-label="' + esc(r.title + ", " + fmt(s) + " to " + endLabel(r)) + '" title="' + esc(r.title + " · " + fmt(s) + " – " + endLabel(r)) + '"></button></div></div>';
+        '<div class="tl-track"><button type="button" class="tl-bar ' + st + (isOpen(r) || e > to ? " open" : "") + '" data-jump="' + esc(r.id) + '" style="left:' + left.toFixed(3) + "%;width:" + Math.max(0.4, right - left).toFixed(3) + "%;--c:" + langColor(r.lang) + '" aria-label="' + esc(r.title + ", " + fmt(s) + " to " + endLabel(r)) + '" title="' + esc(r.title + " · " + fmt(s) + " – " + endLabel(r)) + '"></button></div></div>';
     }).join("");
     box.innerHTML = '<div class="tl" style="--months:' + n + '"><div class="tl-row tl-head"><div class="tl-label"><span class="h">Read</span></div><div class="tl-months">' + head +
       (today >= from && today < to ? '<i class="tl-now" style="left:' + (pos(today) * 100).toFixed(3) + '%"><span>Today</span></i>' : "") + "</div></div>" + rows +
