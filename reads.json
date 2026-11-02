@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28",
+  "updated": "2026-11-02",
   "reads": [
     {
       "id": "neapolitan-novels-mby",
@@ -597,6 +597,23 @@
       "notes": "Close analytical reading, with stylistic analysis, historical context, literary theory and general discussion."
     },
     {
+      "id": "dubliners-mj",
+      "title": "Dubliners",
+      "author": "James Joyce",
+      "lang": "English",
+      "translation": "",
+      "series": "Multiple Joyce Does Dubs",
+      "host": "Elizabeth Graham Madden",
+      "publication": "Multiple Joyce",
+      "url": "https://substack.com/@elizabethgrahammadden1",
+      "start": "2027-01-01",
+      "end": "2027-06-06",
+      "freq": "weekly",
+      "cadence": "One story at a time",
+      "access": "mixed",
+      "notes": "In-depth close readings by a Joyce scholar with decades of experience of the stories."
+    },
+    {
       "id": "rhys-novels-anoto",
       "title": "The Novels of Jean Rhys",
       "author": "Jean Rhys",
@@ -920,6 +937,23 @@
       "access": "paid"
     },
     {
+      "id": "finnegans-wake-mj",
+      "title": "Finnegans Wake",
+      "author": "James Joyce",
+      "lang": "English",
+      "translation": "",
+      "series": "Multiple Joyce's Wake Extravaganza",
+      "host": "Elizabeth Graham Madden",
+      "publication": "Multiple Joyce",
+      "url": "https://substack.com/@elizabethgrahammadden1",
+      "start": "2027-06-01",
+      "end": "2037-01-01",
+      "freq": "weekly",
+      "cadence": "A couple of sentences at a time",
+      "access": "mixed",
+      "notes": "A ten-year read. Hard work but worthwhile: Joyce is funny, inventive and very wise."
+    },
+    {
       "id": "portrait-fat",
       "title": "A Portrait of the Artist as a Young Man",
       "author": "James Joyce",
@@ -1071,23 +1105,6 @@
       "cadence": "Weekly Thursday discussions for paid subscribers; a monthly discussion open to everyone",
       "notes": "",
       "access": "mixed"
-    },
-    {
-      "author": "James Joyce",
-      "lang": "English",
-      "translation": "",
-      "series": "Multiple Joyce",
-      "host": "Elizabeth Graham Madden",
-      "publication": "Multiple Joyce",
-      "url": "https://substack.com/@elizabethgrahammadden1",
-      "freq": "weekly",
-      "cadence": "Essays posted through each week",
-      "access": "free",
-      "id": "finnegans-wake-mj",
-      "title": "Finnegans Wake",
-      "start": "2027-11-01",
-      "end": "2028-12-31",
-      "notes": "A literary journey of exploration and adventure. Written in English and many other languages."
     },
     {
       "id": "miss-macintosh-ri",
