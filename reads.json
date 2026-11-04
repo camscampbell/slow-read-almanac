@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-04",
   "reads": [
     {
       "id": "neapolitan-novels-mby",
@@ -1020,6 +1020,23 @@
       "cadence": "A selection of letters each week",
       "access": "mixed",
       "notes": "Part of a slow-looking series on one artist a month: July 2027 is Van Gogh. Penguin Classics edition."
+    },
+    {
+      "id": "portrait-mj-2027",
+      "title": "A Portrait of the Artist as a Young Man",
+      "author": "James Joyce",
+      "lang": "English",
+      "translation": "",
+      "series": "Multiple Joyce Reads 'A Portrait'",
+      "host": "Elizabeth Graham Madden",
+      "publication": "Multiple Joyce",
+      "url": "https://substack.com/@elizabethgrahammadden1",
+      "start": "2027-07-01",
+      "end": "2027-10-31",
+      "freq": "weekly",
+      "cadence": "One chapter a week",
+      "access": "free",
+      "notes": "Detailed stylistic analysis alongside theme, character and symbolism: suited to serious rather than casual readers."
     },
     {
       "id": "mirror-and-the-light-fat",
