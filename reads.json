@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07",
+  "updated": "2026-11-08",
   "reads": [
     {
       "id": "neapolitan-novels-mby",
@@ -444,6 +444,23 @@
       "notes": "Live Zoom discussion at the end of the month."
     },
     {
+      "lang": "Art",
+      "translation": "",
+      "series": "Slow Looking",
+      "host": "Kristine Benoit de Bykhovetz",
+      "publication": "The Reflective Eye",
+      "url": "https://thereflectiveeye.substack.com/p/slow-looking-2026-a-monthly-immersion",
+      "freq": "weekly",
+      "access": "mixed",
+      "id": "slow-looking-friedrich",
+      "title": "Caspar David Friedrich",
+      "author": "Caspar David Friedrich",
+      "start": "2026-11-05",
+      "end": "2026-11-26",
+      "cadence": "A weekly post through November",
+      "notes": "A slow look rather than a read: one artist a month."
+    },
+    {
       "id": "once-future-witches-sb",
       "title": "The Once and Future Witches",
       "author": "Alix E. Harrow",
@@ -493,6 +510,23 @@
       "cadence": "A post on the writer's life, then two or three posts on the book itself",
       "access": "paid",
       "notes": "Post dates may occasionally change."
+    },
+    {
+      "lang": "Art",
+      "translation": "",
+      "series": "Slow Looking",
+      "host": "Kristine Benoit de Bykhovetz",
+      "publication": "The Reflective Eye",
+      "url": "https://thereflectiveeye.substack.com/p/slow-looking-2026-a-monthly-immersion",
+      "freq": "weekly",
+      "access": "mixed",
+      "id": "slow-looking-avercamp",
+      "title": "Hendrick Avercamp",
+      "author": "Hendrick Avercamp",
+      "start": "2026-12-03",
+      "end": "2026-12-31",
+      "cadence": "A weekly post on Avercamp through December, plus a daily Advent calendar in Notes",
+      "notes": "A slow look rather than a read. The daily Advent calendar in Notes features paintings by Lucas van Valckenborch, with occasional slow-looking exercises, and is free for everyone."
     },
     {
       "id": "nutcracker-rtc",
