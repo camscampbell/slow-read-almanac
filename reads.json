@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "reads": [
     {
       "id": "neapolitan-novels-mby",
@@ -306,6 +306,23 @@
       "cadence": "",
       "access": "mixed",
       "notes": ""
+    },
+    {
+      "id": "compass-bbp",
+      "title": "Compass",
+      "author": "Mathias Énard",
+      "lang": "French",
+      "translation": "Charlotte Mandell",
+      "series": "",
+      "host": "Lori Feathers",
+      "publication": "The Big Book Project",
+      "url": "https://thebigbookproject.substack.com/",
+      "start": "2026-10-19",
+      "end": "2026-11-20",
+      "freq": "other",
+      "cadence": "About 70 pages a week, with two posts a week",
+      "access": "free",
+      "notes": "The Big Book Project has hosted group reads of 19th- and 20th-century classics and modern classics for two years."
     },
     {
       "id": "lila-raw",
