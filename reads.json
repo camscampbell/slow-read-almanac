@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "reads": [
     {
       "id": "neapolitan-novels-mby",
@@ -527,6 +527,23 @@
       "cadence": "A post on the writer's life, then two or three posts on the book itself",
       "access": "paid",
       "notes": "Post dates may occasionally change."
+    },
+    {
+      "id": "sister-of-the-angels-egbc",
+      "title": "Sister of the Angels",
+      "author": "Elizabeth Goudge",
+      "lang": "English",
+      "translation": "",
+      "series": "Torminster books",
+      "host": "Julie Witmer",
+      "publication": "Elizabeth Goudge Book Club",
+      "url": "https://elizabethgoudgebookclub.substack.com/p/getting-ready-for-december-8c7",
+      "start": "2026-12-01",
+      "end": "2026-12-17",
+      "freq": "weekly",
+      "cadence": "A short novella across December",
+      "access": "mixed",
+      "notes": "A short, festive Goudge novella set in a cathedral city, with the Fordyce family celebrating Christmas."
     },
     {
       "lang": "Art",
