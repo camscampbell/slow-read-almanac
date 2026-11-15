@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-15",
   "reads": [
     {
       "id": "neapolitan-novels-mby",
@@ -731,6 +731,23 @@
       "cadence": "About 30 pages a week",
       "notes": "A year-long read. Paid subscribers get weekly recaps, a running character guide, notes on the original French, and access to the subscriber chat and Discord. Ines recommends the unabridged Robin Buss translation (Penguin Classics).",
       "access": "paid"
+    },
+    {
+      "id": "canterbury-tales-em",
+      "title": "The Canterbury Tales",
+      "author": "Geoffrey Chaucer",
+      "lang": "English",
+      "translation": "",
+      "series": "The Canterbury Tales for Beginners",
+      "host": "Emm",
+      "publication": "Emm's Marginalia",
+      "url": "https://emmsmarginalia.substack.com/p/the-canterbury-tales-for-beginners",
+      "start": "2027-01-04",
+      "end": "2027-12-27",
+      "freq": "monthly",
+      "cadence": "Two tales a month",
+      "access": "free",
+      "notes": "Emm will also walk the Canterbury pilgrims' route and write about it alongside the read."
     },
     {
       "id": "wolf-hall-fat",
