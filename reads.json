@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15",
+  "updated": "2026-11-19",
   "reads": [
     {
       "id": "neapolitan-novels-mby",
@@ -765,6 +765,23 @@
       "cadence": "17 weeks",
       "notes": "The first post is free to everyone; after that it needs a paid subscription (£5 a month or £50 a year, with 20% off group annual subscriptions). Includes a podcast version of each post.",
       "access": "paid"
+    },
+    {
+      "id": "middlemarch-2027",
+      "title": "Middlemarch",
+      "author": "George Eliot",
+      "lang": "English",
+      "translation": "",
+      "series": "Middlemarch Slow Read 2027",
+      "host": "Claire Laporte & Katy Sammons",
+      "publication": "The Duck-Billed Reader & A Reading Notebook",
+      "url": "https://katysammons.substack.com/p/middlemarch-slow-read-2027",
+      "start": "2027-01-06",
+      "end": "2027-06-09",
+      "freq": "other",
+      "cadence": "One book of the novel every three weeks or so",
+      "access": "free",
+      "notes": "Co-hosted across two Substacks."
     },
     {
       "id": "makioka-sisters-wsl",
