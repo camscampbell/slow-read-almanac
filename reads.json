@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "reads": [
     {
       "id": "neapolitan-novels-mby",
@@ -850,6 +850,23 @@
       "cadence": "Three books of the poem a month",
       "access": "paid",
       "notes": ""
+    },
+    {
+      "id": "to-the-lighthouse-100",
+      "title": "To the Lighthouse",
+      "author": "Virginia Woolf",
+      "lang": "English",
+      "translation": "",
+      "series": "",
+      "host": "Danell Jones",
+      "publication": "100 Days to the Lighthouse",
+      "url": "https://100daystothelighthouse.substack.com/",
+      "start": "2027-01-25",
+      "end": "2027-05-05",
+      "freq": "daily",
+      "cadence": "About 700 words a day: five to ten minutes of reading",
+      "access": "free",
+      "notes": "Marks the novel's centenary in 2027. Ends on 5 May, a hundred years to the day since it was published."
     },
     {
       "id": "pedro-paramo-rtc",
