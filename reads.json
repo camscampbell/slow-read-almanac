@@ -699,6 +699,23 @@
       "notes": "The Voyage Out, Mrs Dalloway, A Room of One's Own, Orlando, To the Lighthouse and The Waves."
     },
     {
+      "id": "slow-looking-2027",
+      "title": "Slow Looking 2027",
+      "author": "Twelve artists, one a month",
+      "lang": "Art",
+      "translation": "",
+      "series": "Slow Looking",
+      "host": "Kristine Benoit de Bykhovetz",
+      "publication": "The Reflective Eye",
+      "url": "https://thereflectiveeye.substack.com/p/slow-looking-2027",
+      "start": "2027-01-01",
+      "end": "2027-12-31",
+      "freq": "weekly",
+      "cadence": "One artist a month, with three posts on Thursdays and an art chat",
+      "access": "mixed",
+      "notes": "A slow look rather than a read. Jan Cocteau's Orphée, Feb Rothko, Mar Chagall, Apr Magritte, May Pissarro, Jun Kokoschka, Jul Van Gogh (with his letters), Aug Cézanne, Sep Blake, Oct Fuseli, Nov Sickert, Dec Patinir with a Limbourg Advent. The first post each month is free; paid subscribers join the art chat."
+    },
+    {
       "id": "rhys-novels-anoto",
       "title": "The Novels of Jean Rhys",
       "author": "Jean Rhys",
