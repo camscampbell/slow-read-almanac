@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "reads": [
     {
       "id": "neapolitan-novels-mby",
@@ -680,6 +680,23 @@
       "cadence": "One story at a time",
       "access": "mixed",
       "notes": "In-depth close readings by a Joyce scholar with decades of experience of the stories."
+    },
+    {
+      "id": "woolf-six-tbg",
+      "title": "Six Books by Virginia Woolf",
+      "author": "Virginia Woolf",
+      "lang": "English",
+      "translation": "",
+      "series": "",
+      "host": "The Bloomsbury Group",
+      "publication": "The Bloomsbury Group",
+      "url": "https://thebloomsburygroup.substack.com/p/introducing-a-slow-ish-read-and-author",
+      "start": "2027-01-01",
+      "end": "2027-06-30",
+      "freq": "monthly",
+      "cadence": "One book a month, with a monthly post, a mid-month check-in and an end-of-month chat",
+      "access": "free",
+      "notes": "The Voyage Out, Mrs Dalloway, A Room of One's Own, Orlando, To the Lighthouse and The Waves."
     },
     {
       "id": "rhys-novels-anoto",
