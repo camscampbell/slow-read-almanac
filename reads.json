@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21",
+  "updated": "2026-11-25",
   "reads": [
     {
       "id": "neapolitan-novels-mby",
@@ -510,6 +510,23 @@
       "cadence": "A new post every Saturday",
       "access": "free",
       "notes": "Each week brings a companion sheet with visuals and fillable printables to help with the text: a little like homework, but fun."
+    },
+    {
+      "id": "crime-punishment-bbp",
+      "title": "Crime and Punishment",
+      "author": "Fyodor Dostoevsky",
+      "lang": "Russian",
+      "translation": "Michael Katz",
+      "series": "",
+      "host": "Lori Feathers",
+      "publication": "The Big Book Project",
+      "url": "https://thebigbookproject.substack.com/",
+      "start": "2026-11-23",
+      "end": "2027-01-22",
+      "freq": "other",
+      "cadence": "About 70 pages a week, with two posts a week",
+      "access": "free",
+      "notes": ""
     },
     {
       "id": "i-capture-the-castle-clds",
