@@ -835,6 +835,23 @@
       "notes": "Co-hosted across two Substacks."
     },
     {
+      "id": "gogol-tales-ccr",
+      "title": "Gogol's Collected Tales",
+      "author": "Nikolai Gogol",
+      "lang": "Russian",
+      "translation": "Any translation (several compared: see the post)",
+      "series": "",
+      "host": "Cams Campbell",
+      "publication": "Cams Campbell Reads",
+      "url": "https://camscampbellreads.substack.com/p/gogols-short-stories",
+      "start": "2027-01-08",
+      "end": "2027-04-02",
+      "freq": "weekly",
+      "cadence": "One short story a week",
+      "access": "free",
+      "notes": "Thirteen stories, from the Ukrainian tales to the Petersburg tales. Read as many or as few as you like."
+    },
+    {
       "id": "makioka-sisters-wsl",
       "title": "The Makioka Sisters",
       "author": "Jun'ichirō Tanizaki",
