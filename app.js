@@ -68,6 +68,11 @@
     var curW = Math.min(totalW, Math.floor(daysBetween(s, today) / 7) + 1);
     var pct = Math.max(0, Math.min(100, daysBetween(s, today) / Math.max(1, daysBetween(s, e)) * 100));
     if (r.freq === "daily") return { label: "Day " + (daysBetween(s, today) + 1) + " of " + (daysBetween(s, e) + 1), pct: pct };
+    if (r.freq === "monthly") {
+      var mb = function (a, b) { return (b.getFullYear() - a.getFullYear()) * 12 + b.getMonth() - a.getMonth() - (b.getDate() < a.getDate() ? 1 : 0); };
+      var totalM = mb(s, e) + 1;
+      return { label: "Month " + Math.min(totalM, mb(s, today) + 1) + " of " + totalM, pct: pct };
+    }
     return { label: (r.freq === "weekly" ? "Instalment " : "Week ") + curW + " of " + totalW, pct: pct };
   }
   var el = function (id) { return document.getElementById(id); };
