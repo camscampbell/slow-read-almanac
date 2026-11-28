@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25",
+  "updated": "2026-11-28",
   "reads": [
     {
       "id": "neapolitan-novels-mby",
@@ -544,6 +544,23 @@
       "cadence": "A post on the writer's life, then two or three posts on the book itself",
       "access": "paid",
       "notes": "Post dates may occasionally change."
+    },
+    {
+      "id": "waiting-on-the-word-as",
+      "title": "Waiting on the Word",
+      "author": "Malcolm Guite",
+      "lang": "English",
+      "translation": "",
+      "series": "Advent Poetry Reading Challenge",
+      "host": "Christina Bieber Lake",
+      "publication": "Art & Soul",
+      "url": "https://christinabieberlake.substack.com/p/join-the-advent-poetry-reading-challenge",
+      "start": "2026-11-29",
+      "end": "2027-01-06",
+      "freq": "daily",
+      "cadence": "A poem a day, plus three candlelight meetings to discuss favourites",
+      "access": "mixed",
+      "notes": "Guite's anthology of a poem a day for Advent, Christmas and Epiphany."
     },
     {
       "id": "sister-of-the-angels-egbc",
